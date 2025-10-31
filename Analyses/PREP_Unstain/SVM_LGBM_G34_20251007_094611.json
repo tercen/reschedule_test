@@ -1,6 +1,6 @@
 {
  "kind": "Workflow",
- "id": "11",
+ "id": "10",
  "isDeleted": false,
  "rev": "",
  "description": "A workflow to run in parallel SVC/LightGBM and UMAP.",
@@ -109,7 +109,7 @@
  "version": "",
  "isPublic": false,
  "projectId": "",
- "folderId": "7",
+ "folderId": "6",
  "links": [
   {
    "kind": "Link",
@@ -161,7 +161,7 @@
      "id": "rename_3247063a1fa73540364780a96822c0b7",
      "relation": {
       "kind": "ReferenceRelation",
-      "id": "10",
+      "id": "9",
       "relation": {
        "kind": "CompositeRelation",
        "id": "8771053c-0fe8-48c5-b678-69d45364a93a",
@@ -630,8 +630,8 @@
      "operatorRef": {
       "kind": "OperatorRef",
       "name": "Train SVM/LGBM operator",
-      "version": "a0f4cbdc91638f2e1261ea376191f05106af8321",
-      "operatorId": "2",
+      "version": "3d9c6bfbe9d6666e2672ea46e5d1f1c78c9b4318",
+      "operatorId": "12",
       "operatorKind": "DockerOperator",
       "propertyValues": [
        {
@@ -908,7 +908,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "9d0ed754-d174-4e31-91ba-a5bc60dc9cf7"
+    "id": "f15594aa-ed00-4eac-88bd-dd11059f04c3"
    },
    "parentDataStepId": ""
   }

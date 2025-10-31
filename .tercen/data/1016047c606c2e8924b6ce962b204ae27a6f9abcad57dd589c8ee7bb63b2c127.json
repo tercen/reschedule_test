@@ -103,7 +103,7 @@
     "id": "e5fd59cb-758a-4971-a6b5-ee4b5af07229",
     "relation": {
      "kind": "InMemoryRelation",
-     "id": "6db18cbc-4435-4de1-ae02-3ec8a5897f49",
+     "id": "276b60e7-11a4-4ca4-9956-696f1427cbda",
      "inMemoryTable": {
       "kind": "Table",
       "nRows": 1,
@@ -290,7 +290,7 @@
     "kind": "OperatorRef",
     "name": "Data prepare operator",
     "version": "0.11.5",
-    "operatorId": "4",
+    "operatorId": "3",
     "operatorKind": "DockerOperator",
     "propertyValues": [
      {

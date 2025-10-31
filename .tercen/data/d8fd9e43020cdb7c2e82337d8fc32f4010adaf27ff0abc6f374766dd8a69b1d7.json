@@ -164,7 +164,7 @@
    "id": "9b7877a8-f684-4653-b340-9d1193c2f46d",
    "relation": {
     "kind": "InMemoryRelation",
-    "id": "fe73c6e7-59b4-42e8-a29f-511c5cd9a145",
+    "id": "f24c74b5-9916-4268-944d-cfa22a4b706f",
     "inMemoryTable": {
      "kind": "Table",
      "nRows": 1,
@@ -280,7 +280,7 @@
     "kind": "OperatorRef",
     "name": "Experiment read operator",
     "version": "0.3.2",
-    "operatorId": "3",
+    "operatorId": "2",
     "operatorKind": "DockerOperator",
     "propertyValues": [],
     "url": {

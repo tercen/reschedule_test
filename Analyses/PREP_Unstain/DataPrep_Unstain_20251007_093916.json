@@ -1,6 +1,6 @@
 {
  "kind": "Workflow",
- "id": "8",
+ "id": "7",
  "isDeleted": false,
  "rev": "",
  "description": "A template worfklow that imports .gcs files for a user-defined set of specimen and tubes and plots the overall gating tree and the gates per tube. All read-in data are stored in .gz files in order to be further used downstream.",
@@ -124,7 +124,7 @@
  "version": "",
  "isPublic": false,
  "projectId": "",
- "folderId": "7",
+ "folderId": "6",
  "links": [
   {
    "kind": "Link",
@@ -188,7 +188,7 @@
      "id": "rename_05bc581a-46da-4d25-9718-9f6ccc270260",
      "relation": {
       "kind": "InMemoryRelation",
-      "id": "af5de8cf-ba84-4689-990a-03a2e873a613",
+      "id": "d5122fe0-641d-41ae-92e6-38d1e088bd8c",
       "inMemoryTable": {
        "kind": "Table",
        "nRows": 1,
@@ -453,7 +453,7 @@
       "kind": "OperatorRef",
       "name": "Experiment read operator",
       "version": "0.3.2",
-      "operatorId": "3",
+      "operatorId": "2",
       "operatorKind": "DockerOperator",
       "propertyValues": [],
       "url": {
@@ -776,7 +776,7 @@
       "kind": "OperatorRef",
       "name": "Data prepare operator",
       "version": "0.11.5",
-      "operatorId": "4",
+      "operatorId": "3",
       "operatorKind": "DockerOperator",
       "propertyValues": [
        {
@@ -1516,7 +1516,7 @@
      "id": "rename_bebefd0e-e268-486c-a646-d64359f25a52",
      "relation": {
       "kind": "InMemoryRelation",
-      "id": "041b63d9-0880-4431-8959-a1841e41c694",
+      "id": "2fe9d6e0-928c-460a-9ae3-f9114f5b1ad0",
       "inMemoryTable": {
        "kind": "Table",
        "nRows": 1,

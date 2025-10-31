@@ -1,0 +1,200 @@
+{
+ "kind": "CubeQueryTableSchema",
+ "id": "6d5d921c13fde8dd1117ac845963c0f4628aa20924e5a2229edfe8d282fa4f96",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "row",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "ds0.gcs_documentId.size_in_bytes",
+   "value": "152"
+  },
+  {
+   "kind": "Pair",
+   "key": "ds0.Spec_Name.size_in_bytes",
+   "value": "128"
+  },
+  {
+   "kind": "Pair",
+   "key": "documentId.size_in_bytes",
+   "value": "144"
+  },
+  {
+   "kind": "Pair",
+   "key": "ds0.Tube_Name.size_in_bytes",
+   "value": "120"
+  },
+  {
+   "kind": "Pair",
+   "key": "ds0.Comment.size_in_bytes",
+   "value": "112"
+  },
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "6d5d921c13fde8dd1117ac845963c0f4628aa20924e5a2229edfe8d282fa4f96"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "9",
+ "nRows": 1,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "ecdba8cd-b046-4534-88da-089c7d74522c",
+   "name": "documentId",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "f4fc30b2-b8bc-401d-93ce-e5cdf8398b67",
+   "name": "ds0.Spec_Name",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "f773ecaa-fb4c-4efa-ac58-2ad0ee99f0c3",
+   "name": "ds0.Tube_Name",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "9f760a1e-3098-4068-bd04-e0513beae0b8",
+   "name": "ds0.Comment",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "de669800-5502-4400-ab85-a94cbdc38358",
+   "name": "ds0.gcs_documentId",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  }
+ ],
+ "dataDirectory": "data/6d/5d/6d5d921c13fde8dd1117ac845963c0f4628aa20924e5a2229edfe8d282fa4f96",
+ "relation": {
+  "kind": "Relation",
+  "id": "7d6a82ec-776d-4e8c-9b31-4c4ed5143f11"
+ },
+ "size": 37776,
+ "storageSize": 37776.0,
+ "queryHash": "3247063a1fa73540364780a9681f322b",
+ "queryTableType": "row",
+ "query": {
+  "kind": "CubeQuery",
+  "relation": {
+   "kind": "Relation",
+   "id": "fb6e2eda-da89-4aa4-956e-bbf06bfce8c6"
+  },
+  "colColumns": [],
+  "rowColumns": [],
+  "axisQueries": [],
+  "filters": {
+   "kind": "Filters",
+   "removeNaN": true,
+   "namedFilters": []
+  },
+  "operatorSettings": {
+   "kind": "OperatorSettings",
+   "namespace": "",
+   "operatorRef": {
+    "kind": "OperatorRef",
+    "name": "",
+    "version": "",
+    "operatorId": "",
+    "operatorKind": "",
+    "propertyValues": [],
+    "url": {
+     "kind": "Url",
+     "uri": ""
+    },
+    "operatorSpec": {
+     "kind": "OperatorSpec",
+     "ontologyUri": "",
+     "ontologyVersion": "",
+     "inputSpecs": [],
+     "outputSpecs": []
+    }
+   },
+   "environment": [],
+   "operatorModel": {
+    "kind": "OperatorModel"
+   }
+  },
+  "qtHash": "",
+  "columnHash": "",
+  "rowHash": ""
+ }
+}

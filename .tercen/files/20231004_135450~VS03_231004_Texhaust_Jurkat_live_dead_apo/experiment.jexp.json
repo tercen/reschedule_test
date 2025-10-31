@@ -1,0 +1,43 @@
+{
+ "kind": "FileDocument",
+ "id": "20231004_135450~VS03_231004_Texhaust_Jurkat_live_dead_apo/experiment.jexp",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "experiment.jexp",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "0",
+ "dataUri": "lfs/b7/30/efbb100f08842cf2cbc8086319d1fea5154417396ed8ca1aecbcc650f314",
+ "metadata": {
+  "kind": "FileMetadata",
+  "contentType": "",
+  "cacheControl": "",
+  "contentEncoding": "",
+  "contentLanguage": "",
+  "md5Hash": "67e8d9d3b238b0d83171a4afc54a5a6a"
+ },
+ "size": 25490,
+ "storageSize": 25490.0
+}

@@ -1,0 +1,49 @@
+{
+ "kind": "FileDocument",
+ "id": "Analyses/PREP_Unstain/SVM_251007_214625/README.md",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "README.md",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "WORKFLOW_ID",
+   "value": "3247063a1fa73540364780a9682cb91a"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": true,
+ "projectId": "",
+ "folderId": "12",
+ "dataUri": "lfs/8c/a2/19b6e48a05c1101474e0afee572e9fe55a465eeecdf1f751e72c61e29ce0",
+ "metadata": {
+  "kind": "FileMetadata",
+  "contentType": "text/markdown",
+  "cacheControl": "",
+  "contentEncoding": "",
+  "contentLanguage": "",
+  "md5Hash": ""
+ },
+ "size": 102,
+ "storageSize": 102.0
+}

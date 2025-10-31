@@ -1,0 +1,49 @@
+{
+ "kind": "FileDocument",
+ "id": "Analyses/PREP_Unstain/SVM_251007_214625/SVM_data_251007_214013_Jurkat_live_dead_apo_3_unstain__251007_214625_MERGED.amodel.gz",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "SVM_data_251007_214013_Jurkat_live_dead_apo_3_unstain__251007_214625_MERGED.amodel.gz",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "WORKFLOW_ID",
+   "value": "3247063a1fa73540364780a9682cb91a"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": true,
+ "projectId": "",
+ "folderId": "12",
+ "dataUri": "lfs/66/e9/7525d08dd386f831901bdfbf03a0e7da56d87dbd0faef7d7035c54e7ee72",
+ "metadata": {
+  "kind": "FileMetadata",
+  "contentType": "",
+  "cacheControl": "",
+  "contentEncoding": "gzip",
+  "contentLanguage": "",
+  "md5Hash": ""
+ },
+ "size": 159317612,
+ "storageSize": 159317612.0
+}

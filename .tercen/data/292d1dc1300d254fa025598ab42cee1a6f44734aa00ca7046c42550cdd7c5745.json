@@ -1,0 +1,117 @@
+{
+ "kind": "TableSchema",
+ "id": "292d1dc1300d254fa025598ab42cee1a6f44734aa00ca7046c42550cdd7c5745",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "Gate Membership",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "hidden",
+   "value": "true"
+  },
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "292d1dc1300d254fa025598ab42cee1a6f44734aa00ca7046c42550cdd7c5745"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "9",
+ "nRows": 111345,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "878f25ff-7d53-4566-8762-df4856890d64",
+   "name": ".gcs_id2",
+   "type": "int32",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "0ea25c91-a08c-4638-bdbc-ad87393e553a",
+   "name": ".event_id",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "23511c32-ee1b-4031-8444-313f5cfeffe0",
+   "name": "GateName",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "76708feb-552c-4d0f-8ab1-073e650a5a9c",
+   "name": "GateMember",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  }
+ ],
+ "dataDirectory": "data/29/2d/292d1dc1300d254fa025598ab42cee1a6f44734aa00ca7046c42550cdd7c5745",
+ "relation": {
+  "kind": "Relation",
+  "id": "a9ab6cef-ec6d-4227-89ab-7fe228ed28a1"
+ },
+ "size": 303616,
+ "storageSize": 303616.0
+}

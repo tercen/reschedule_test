@@ -1,0 +1,277 @@
+{
+ "kind": "TableSchema",
+ "id": "2756131fd99294f36c8e47e549b0b42c6df51b544b511386da299d93e6b9c25b",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "Fluorescent Data",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "hidden",
+   "value": "true"
+  },
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "2756131fd99294f36c8e47e549b0b42c6df51b544b511386da299d93e6b9c25b"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "9",
+ "nRows": 7423,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "34da6810-e750-4884-abe7-e700a364a922",
+   "name": ".gcs_id2",
+   "type": "int32",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "ba18b9ef-75a8-4431-83f5-cdcea937fcbc",
+   "name": ".event_id",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "eca8ae51-e27d-47ad-80bc-99c3cc657730",
+   "name": "fsc_comp_h",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "96d7cd50-1cc7-4595-8daa-d00e1b847e6b",
+   "name": "bsc_comp_h",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "ca9752cb-6595-42db-9885-e8e06ef3dae3",
+   "name": "fl1_405_comp_h",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "9e9412d1-61b6-4e67-ac90-7a12b0e6d97c",
+   "name": "fl2_488_comp_h",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "50ac41c7-d2e0-4b30-82c2-fc725b8da97e",
+   "name": "fl3_488_comp_h",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "17c08355-5109-458c-b6cb-cce99320726d",
+   "name": "fl4_488_comp_h",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "03ccc234-335e-41ad-8daa-0332c617b246",
+   "name": "fl5_637_comp_h",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "f082a5cc-2e44-4910-a196-a114204e0415",
+   "name": "na_a_comp_h",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "1766d123-21f8-469c-8172-588196cb1042",
+   "name": "fsgmi_comp_h",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "caee2831-6702-488b-95d3-b0aeaaf6927f",
+   "name": "bsgmi_comp_h",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "e106c514-6243-4c7e-af29-b616685019cf",
+   "name": "dgmi_comp_h",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "c5ad585a-c104-4b7f-83bc-1a12e272d2e9",
+   "name": "bfgmi_comp_h",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  }
+ ],
+ "dataDirectory": "data/27/56/2756131fd99294f36c8e47e549b0b42c6df51b544b511386da299d93e6b9c25b",
+ "relation": {
+  "kind": "Relation",
+  "id": "71666a92-3eee-48f5-b83d-0cc54d28d24c"
+ },
+ "size": 576184,
+ "storageSize": 576184.0
+}

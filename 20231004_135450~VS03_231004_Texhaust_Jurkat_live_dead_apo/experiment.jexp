@@ -1,0 +1,938 @@
+{
+    "$FileVersion": 2.0,
+    "Acquisition": {
+        "SortEnable": false,
+        "SortGate": 0,
+        "SortModel": "",
+        "SvmEnable": false
+    },
+    "Calib": {
+        "Ch": 2,
+        "FlowPositionGoalBegin": 100,
+        "FlowPositionGoalEnd": 130,
+        "FlowPositionStartBegin": 70,
+        "FlowPositionStartEnd": 95,
+        "FlowVelocityGoalBegin": 535,
+        "FlowVelocityGoalEnd": 555,
+        "FlowVelocityStartBegin": 70,
+        "FlowVelocityStartEnd": 95,
+        "OptimizationMethodY": 1,
+        "PreciseSearchSettingXTargetDistance": 40.0,
+        "PreciseSearchSettingYMax": 50.0,
+        "PreciseSearchSettingYMin": -50.0,
+        "PreciseSearchSettingYStep": 500.0,
+        "RoughCalibCh": 1,
+        "RoughSearchSettingXMax": 500.0,
+        "RoughSearchSettingXMin": -50.0,
+        "RoughSearchSettingXStep": 30.0,
+        "RoughSearchSettingYMax": 1000.0,
+        "RoughSearchSettingYMin": -50.0,
+        "RoughSearchSettingYStep": 10.0,
+        "SelNumEvents2": 500,
+        "SelPreciseCalibAxis": 1,
+        "SelRoughCalibAxis": 0,
+        "SelTimeout": 1,
+        "TargetGate": 2
+    },
+    "ContecDA": {
+        "KPA": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0
+        }
+    },
+    "Detector": {
+        "0": {
+            "Name": "FSC",
+            "Region": {
+                "0": {
+                    "Begin": 0,
+                    "End": 499,
+                    "FPGAChannelIndex": 0,
+                    "Name": "FSC",
+                    "PulseDetector": 0
+                }
+            },
+            "RegionNum": 1
+        },
+        "1": {
+            "Name": "BSC",
+            "Region": {
+                "0": {
+                    "Begin": 0,
+                    "End": 499,
+                    "FPGAChannelIndex": 1,
+                    "Name": "BSC",
+                    "PulseDetector": 0
+                }
+            },
+            "RegionNum": 1
+        },
+        "10": {
+            "Name": "dGMI",
+            "Region": {
+                "0": {
+                    "Begin": 0,
+                    "End": 895,
+                    "FPGAChannelIndex": 10,
+                    "Name": "dGMI",
+                    "PulseDetector": 0
+                }
+            },
+            "RegionNum": 1
+        },
+        "11": {
+            "Name": "bfGMI",
+            "Region": {
+                "0": {
+                    "Begin": 0,
+                    "End": 895,
+                    "FPGAChannelIndex": 11,
+                    "Name": "bfGMI",
+                    "PulseDetector": 0
+                }
+            },
+            "RegionNum": 1
+        },
+        "12": {
+            "Name": "Detector13",
+            "RegionNum": 0
+        },
+        "13": {
+            "Name": "Detector14",
+            "RegionNum": 0
+        },
+        "14": {
+            "Name": "Detector15",
+            "RegionNum": 0
+        },
+        "15": {
+            "Name": "Detector16",
+            "RegionNum": 0
+        },
+        "2": {
+            "Name": "FL1",
+            "Region": {
+                "0": {
+                    "Begin": 110,
+                    "End": 150,
+                    "FPGAChannelIndex": 2,
+                    "Name": "FL1-405",
+                    "PulseDetector": 0
+                }
+            },
+            "RegionNum": 1
+        },
+        "3": {
+            "Name": "FL2",
+            "Region": {
+                "0": {
+                    "Begin": 500,
+                    "End": 895,
+                    "FPGAChannelIndex": 3,
+                    "Name": "FL2-488",
+                    "PulseDetector": 0
+                }
+            },
+            "RegionNum": 1
+        },
+        "4": {
+            "Name": "FL3",
+            "Region": {
+                "0": {
+                    "Begin": 500,
+                    "End": 895,
+                    "FPGAChannelIndex": 4,
+                    "Name": "FL3-488",
+                    "PulseDetector": 0
+                }
+            },
+            "RegionNum": 1
+        },
+        "5": {
+            "Name": "FL4",
+            "Region": {
+                "0": {
+                    "Begin": 500,
+                    "End": 895,
+                    "FPGAChannelIndex": 5,
+                    "Name": "FL4-488",
+                    "PulseDetector": 0
+                }
+            },
+            "RegionNum": 1
+        },
+        "6": {
+            "Name": "FL5",
+            "Region": {
+                "0": {
+                    "Begin": 0,
+                    "End": 499,
+                    "FPGAChannelIndex": 6,
+                    "Name": "FL5-637",
+                    "PulseDetector": 0
+                }
+            },
+            "RegionNum": 1
+        },
+        "7": {
+            "Name": "NA",
+            "Region": {
+                "0": {
+                    "Begin": 0,
+                    "End": 895,
+                    "FPGAChannelIndex": 7,
+                    "Name": "NA-A",
+                    "PulseDetector": 0
+                }
+            },
+            "RegionNum": 1
+        },
+        "8": {
+            "Name": "fsGMI",
+            "Region": {
+                "0": {
+                    "Begin": 0,
+                    "End": 895,
+                    "FPGAChannelIndex": 8,
+                    "Name": "fsGMI",
+                    "PulseDetector": 0
+                }
+            },
+            "RegionNum": 1
+        },
+        "9": {
+            "Name": "bsGMI",
+            "Region": {
+                "0": {
+                    "Begin": 0,
+                    "End": 895,
+                    "FPGAChannelIndex": 9,
+                    "Name": "bsGMI",
+                    "PulseDetector": 0
+                }
+            },
+            "RegionNum": 1
+        }
+    },
+    "DetectorPreset": {
+        "0": {
+            "Value": {
+                "0": 0.0,
+                "1": 31.7,
+                "10": 39.0,
+                "11": 0.0,
+                "12": 0.0,
+                "13": 0.0,
+                "14": 0.0,
+                "15": 0.0,
+                "2": 31.7,
+                "3": 48.8,
+                "4": 51.7,
+                "5": 0.0,
+                "6": 35.7,
+                "7": 0.0,
+                "8": 29.3,
+                "9": 33.1
+            }
+        },
+        "1": {
+            "Value": {
+                "0": 0.0,
+                "1": 0.0,
+                "10": 0.0,
+                "11": 0.0,
+                "12": 0.0,
+                "13": 0.0,
+                "14": 0.0,
+                "15": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0,
+                "7": 0.0,
+                "8": 0.0,
+                "9": 0.0
+            }
+        },
+        "2": {
+            "Value": {
+                "0": 0.0,
+                "1": 0.0,
+                "10": 0.0,
+                "11": 0.0,
+                "12": 0.0,
+                "13": 0.0,
+                "14": 0.0,
+                "15": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0,
+                "7": 0.0,
+                "8": 0.0,
+                "9": 0.0
+            }
+        },
+        "3": {
+            "Value": {
+                "0": 0.0,
+                "1": 0.0,
+                "10": 0.0,
+                "11": 0.0,
+                "12": 0.0,
+                "13": 0.0,
+                "14": 0.0,
+                "15": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0,
+                "7": 0.0,
+                "8": 0.0,
+                "9": 0.0
+            }
+        },
+        "4": {
+            "Value": {
+                "0": 0.0,
+                "1": 0.0,
+                "10": 0.0,
+                "11": 0.0,
+                "12": 0.0,
+                "13": 0.0,
+                "14": 0.0,
+                "15": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0,
+                "7": 0.0,
+                "8": 0.0,
+                "9": 0.0
+            }
+        }
+    },
+    "ExperimentInfo": {
+        "000": {
+            "Comment": "",
+            "Indent": 0,
+            "Name": "231004_Texhaust_Jurkat_live_dead_apo",
+            "Operator": "ThinkCyte",
+            "Parent": -1,
+            "SeqNoExp": -1,
+            "Type": 0
+        },
+        "001": {
+            "Comment": "",
+            "Indent": 1,
+            "Name": "AI Classifier",
+            "Parent": 0,
+            "Type": 10
+        },
+        "002": {
+            "Comment": "",
+            "Indent": 1,
+            "Name": "AI Mapper",
+            "Parent": 0,
+            "Type": 11
+        },
+        "003": {
+            "Comment": "",
+            "Indent": 1,
+            "Name": "Worksheet Group T_exhaustion",
+            "Parent": 0,
+            "SeqNoTubeGroup": 1,
+            "TabWorksheet001": [
+                1,
+                ""
+            ],
+            "Type": 7
+        },
+        "004": {
+            "Comment": "",
+            "Indent": 2,
+            "Name": "Tube Setting 1",
+            "Parent": 3,
+            "SeqNoSpec": 1,
+            "TubeEmptyLock": true,
+            "Type": 4
+        },
+        "005": {
+            "AutoRead": true,
+            "Comment": "",
+            "Date": "2023/10/04 14:24:06",
+            "Indent": 3,
+            "Name": "1_NoStim_spiked_chr_stm",
+            "Parent": 4,
+            "SampleStart": 0,
+            "SampleStep": 0,
+            "SampleStop": 0,
+            "SeqNoRec": 1,
+            "Type": 2
+        },
+        "006": {
+            "AutoRead": true,
+            "Comment": "",
+            "Date": "2023/10/04 14:36:20",
+            "Indent": 3,
+            "Name": "2_NoStim",
+            "Parent": 4,
+            "SampleStart": 0,
+            "SampleStep": 0,
+            "SampleStop": 0,
+            "SeqNoRec": 2,
+            "Type": 2
+        },
+        "007": {
+            "AutoRead": true,
+            "Comment": "",
+            "Date": "2023/10/04 14:48:00",
+            "Indent": 3,
+            "Name": "3_transient_stim_Tcell",
+            "Parent": 4,
+            "SampleStart": 0,
+            "SampleStep": 0,
+            "SampleStop": 0,
+            "SeqNoRec": 3,
+            "Type": 2
+        },
+        "008": {
+            "AutoRead": true,
+            "Comment": "",
+            "Date": "2023/10/04 14:59:48",
+            "Indent": 3,
+            "Name": "4_chronic_stim_Tcell",
+            "Parent": 4,
+            "SampleStart": 0,
+            "SampleStep": 0,
+            "SampleStop": 0,
+            "SeqNoRec": 4,
+            "Type": 2
+        },
+        "009": {
+            "AutoRead": true,
+            "Comment": "",
+            "Date": "2023/10/04 15:07:10",
+            "Indent": 3,
+            "Name": "5_AF488_LAG-3_ss",
+            "Parent": 4,
+            "SampleStart": 0,
+            "SampleStep": 0,
+            "SampleStop": 0,
+            "SeqNoRec": 5,
+            "Type": 2
+        },
+        "010": {
+            "AutoRead": true,
+            "Comment": "",
+            "Date": "2023/10/04 15:16:41",
+            "Indent": 3,
+            "Name": "6_PE_PD-1_ss",
+            "Parent": 4,
+            "SampleStart": 0,
+            "SampleStep": 0,
+            "SampleStop": 0,
+            "SeqNoRec": 6,
+            "Type": 2
+        },
+        "011": {
+            "AutoRead": true,
+            "Comment": "",
+            "Date": "2023/10/04 15:25:47",
+            "Indent": 3,
+            "Name": "7_ZombieNIR_ss",
+            "Parent": 4,
+            "SampleStart": 0,
+            "SampleStep": 0,
+            "SampleStop": 0,
+            "SeqNoRec": 7,
+            "Type": 2
+        },
+        "012": {
+            "AutoRead": true,
+            "Comment": "",
+            "Date": "2023/10/04 15:34:34",
+            "Indent": 3,
+            "Name": "8_unstain",
+            "Parent": 4,
+            "SampleStart": 0,
+            "SampleStep": 0,
+            "SampleStop": 0,
+            "SeqNoRec": 8,
+            "Type": 2
+        },
+        "013": {
+            "Comment": "",
+            "Indent": 2,
+            "Name": "Jurkat_live_dead_apo",
+            "Parent": 3,
+            "SeqNoSpec": 2,
+            "TubeEmptyLock": true,
+            "Type": 4
+        },
+        "014": {
+            "AutoRead": true,
+            "Comment": "",
+            "Date": "2023/10/04 15:45:40",
+            "Indent": 3,
+            "Name": "2_treat_Zombie",
+            "Parent": 13,
+            "SampleStart": 0,
+            "SampleStep": 0,
+            "SampleStop": 0,
+            "SeqNoRec": 9,
+            "Type": 2
+        },
+        "015": {
+            "AutoRead": true,
+            "Comment": "",
+            "Date": "2023/10/04 15:57:17",
+            "Indent": 3,
+            "Name": "1_no treat_Zombie",
+            "Parent": 13,
+            "SampleStart": 0,
+            "SampleStep": 0,
+            "SampleStop": 0,
+            "SeqNoRec": 10,
+            "Type": 2
+        },
+        "016": {
+            "AutoRead": true,
+            "Comment": "",
+            "Date": "2023/10/04 16:08:40",
+            "Indent": 3,
+            "Name": "3_unstain",
+            "Parent": 13,
+            "SampleStart": 0,
+            "SampleStep": 0,
+            "SampleStop": 0,
+            "SeqNoRec": 11,
+            "Type": 2
+        }
+    },
+    "ExperimentSetup": {
+        "GroupNo": 1,
+        "Num": 17,
+        "SeqNoFilter": 1,
+        "SeqNoFolderMdl": 1,
+        "SeqNoFolderUmap": 1,
+        "SeqNoRec": 12,
+        "SeqNoSpec": 3,
+        "SeqNoTubeGroup": 2
+    },
+    "ExperimentType": {
+        "Type": "Normal"
+    },
+    "FPGA": {
+        "XInterval": 128.0,
+        "XMax": 896.0,
+        "XMin": 0.0,
+        "YInterval": 200.0,
+        "YMax": 1000.0,
+        "YMin": -200.0,
+        "cntPoints": 896,
+        "cutoff": 0.0,
+        "draw_guide": true,
+        "draw_region": true,
+        "draw_yh": 0,
+        "nrave": 3,
+        "nsample": 3,
+        "pls_delay0": 5.0,
+        "pls_delay1": 5.0,
+        "pls_delay_common": 295.0,
+        "pls_times0": 1,
+        "pls_times1": 1,
+        "pls_width0": 10.0,
+        "pls_width1": 10.0,
+        "sel_trig_ch": 0,
+        "trig_method": 2,
+        "trig_mode": 1,
+        "use_cutoff": false
+    },
+    "FPGA_CH": {
+        "0": {
+            "ADCOffset": 0.0,
+            "TrigPointA": 5,
+            "TrigPointB": 745,
+            "cntPostTh": 5,
+            "cntPostTrig": 50,
+            "cntPreTh": 5,
+            "cntPreTrig": 5,
+            "voltPostThDw": 20.0,
+            "voltPreThUp": 20.0
+        },
+        "1": {
+            "ADCOffset": 0.0,
+            "TrigPointA": 248,
+            "TrigPointB": 745,
+            "cntPostTh": 5,
+            "cntPostTrig": 50,
+            "cntPreTh": 5,
+            "cntPreTrig": 5,
+            "voltPostThDw": 20.0,
+            "voltPreThUp": 20.0
+        },
+        "10": {
+            "ADCOffset": 0.0,
+            "TrigPointA": 248,
+            "TrigPointB": 745,
+            "cntPostTh": 5,
+            "cntPostTrig": 50,
+            "cntPreTh": 5,
+            "cntPreTrig": 5,
+            "voltPostThDw": -999.0,
+            "voltPreThUp": -999.0
+        },
+        "11": {
+            "ADCOffset": 0.0,
+            "TrigPointA": 248,
+            "TrigPointB": 745,
+            "cntPostTh": 5,
+            "cntPostTrig": 50,
+            "cntPreTh": 5,
+            "cntPreTrig": 5,
+            "voltPostThDw": -999.0,
+            "voltPreThUp": -999.0
+        },
+        "12": {
+            "ADCOffset": 0.0,
+            "TrigPointA": 248,
+            "TrigPointB": 745,
+            "cntPostTh": 5,
+            "cntPostTrig": 50,
+            "cntPreTh": 5,
+            "cntPreTrig": 5,
+            "voltPostThDw": 0.0,
+            "voltPreThUp": 0.0
+        },
+        "13": {
+            "ADCOffset": 0.0,
+            "TrigPointA": 248,
+            "TrigPointB": 745,
+            "cntPostTh": 5,
+            "cntPostTrig": 50,
+            "cntPreTh": 5,
+            "cntPreTrig": 5,
+            "voltPostThDw": 0.0,
+            "voltPreThUp": 0.0
+        },
+        "14": {
+            "ADCOffset": 0.0,
+            "TrigPointA": 248,
+            "TrigPointB": 745,
+            "cntPostTh": 5,
+            "cntPostTrig": 50,
+            "cntPreTh": 5,
+            "cntPreTrig": 5,
+            "voltPostThDw": 0.0,
+            "voltPreThUp": 0.0
+        },
+        "15": {
+            "ADCOffset": 0.0,
+            "TrigPointA": 248,
+            "TrigPointB": 745,
+            "cntPostTh": 5,
+            "cntPostTrig": 50,
+            "cntPreTh": 5,
+            "cntPreTrig": 5,
+            "voltPostThDw": 0.0,
+            "voltPreThUp": 0.0
+        },
+        "2": {
+            "ADCOffset": 0.0,
+            "TrigPointA": 248,
+            "TrigPointB": 745,
+            "cntPostTh": 5,
+            "cntPostTrig": 50,
+            "cntPreTh": 5,
+            "cntPreTrig": 5,
+            "voltPostThDw": 20.0,
+            "voltPreThUp": 20.0
+        },
+        "3": {
+            "ADCOffset": 0.0,
+            "TrigPointA": 248,
+            "TrigPointB": 745,
+            "cntPostTh": 5,
+            "cntPostTrig": 50,
+            "cntPreTh": 5,
+            "cntPreTrig": 5,
+            "voltPostThDw": 20.0,
+            "voltPreThUp": 20.0
+        },
+        "4": {
+            "ADCOffset": 0.0,
+            "TrigPointA": 248,
+            "TrigPointB": 745,
+            "cntPostTh": 5,
+            "cntPostTrig": 50,
+            "cntPreTh": 5,
+            "cntPreTrig": 5,
+            "voltPostThDw": 20.0,
+            "voltPreThUp": 20.0
+        },
+        "5": {
+            "ADCOffset": 0.0,
+            "TrigPointA": 248,
+            "TrigPointB": 745,
+            "cntPostTh": 5,
+            "cntPostTrig": 50,
+            "cntPreTh": 5,
+            "cntPreTrig": 5,
+            "voltPostThDw": 20.0,
+            "voltPreThUp": 20.0
+        },
+        "6": {
+            "ADCOffset": 0.0,
+            "TrigPointA": 248,
+            "TrigPointB": 745,
+            "cntPostTh": 5,
+            "cntPostTrig": 50,
+            "cntPreTh": 5,
+            "cntPreTrig": 5,
+            "voltPostThDw": 20.0,
+            "voltPreThUp": 20.0
+        },
+        "7": {
+            "ADCOffset": 0.0,
+            "TrigPointA": 248,
+            "TrigPointB": 745,
+            "cntPostTh": 5,
+            "cntPostTrig": 50,
+            "cntPreTh": 5,
+            "cntPreTrig": 5,
+            "voltPostThDw": 20.0,
+            "voltPreThUp": 20.0
+        },
+        "8": {
+            "ADCOffset": 0.0,
+            "TrigPointA": 248,
+            "TrigPointB": 745,
+            "cntPostTh": 5,
+            "cntPostTrig": 50,
+            "cntPreTh": 5,
+            "cntPreTrig": 5,
+            "voltPostThDw": -999.0,
+            "voltPreThUp": -999.0
+        },
+        "9": {
+            "ADCOffset": 0.0,
+            "TrigPointA": 248,
+            "TrigPointB": 745,
+            "cntPostTh": 5,
+            "cntPostTrig": 50,
+            "cntPreTh": 5,
+            "cntPreTrig": 5,
+            "voltPostThDw": -999.0,
+            "voltPreThUp": -999.0
+        }
+    },
+    "FPGA_Main": {
+        "cntPostTh": 5,
+        "cntPostTrig": 50,
+        "cntPreTh": 5,
+        "cntPreTrig": 40,
+        "voltPostThDw": 20.0,
+        "voltPreThUp": 20.0
+    },
+    "FunctionGenerator": {
+        "DutyCycle": 250,
+        "Frequency": 50,
+        "OffsetLevel": 75,
+        "OutputAmplitude": 150,
+        "Phase": 0,
+        "Shape": "PULSe"
+    },
+    "Product": {
+        "id": "VS03",
+        "revision": "20230822"
+    },
+    "RealMon": {
+        "0": {
+            "DensityCount": 4,
+            "DensitySize": 2,
+            "DisplayHeatmap": "FALSE",
+            "XInterval": 128.0,
+            "XMax": 896.0,
+            "XMin": 0.0,
+            "YInterval": 200.0,
+            "YMax": 1000.0,
+            "YMin": -200.0
+        },
+        "1": {
+            "DensityCount": 4,
+            "DensitySize": 2,
+            "DisplayHeatmap": "FALSE",
+            "XInterval": 128.0,
+            "XMax": 896.0,
+            "XMin": 0.0,
+            "YInterval": 200.0,
+            "YMax": 1000.0,
+            "YMin": -200.0
+        },
+        "10": {
+            "DensityCount": 4,
+            "DensitySize": 2,
+            "DisplayHeatmap": "FALSE",
+            "XInterval": 128.0,
+            "XMax": 896.0,
+            "XMin": 0.0,
+            "YInterval": 200.0,
+            "YMax": 1000.0,
+            "YMin": -200.0
+        },
+        "11": {
+            "DensityCount": 4,
+            "DensitySize": 2,
+            "DisplayHeatmap": "FALSE",
+            "XInterval": 128.0,
+            "XMax": 896.0,
+            "XMin": 0.0,
+            "YInterval": 200.0,
+            "YMax": 1000.0,
+            "YMin": -200.0
+        },
+        "12": {
+            "DensityCount": 4,
+            "DensitySize": 2,
+            "DisplayHeatmap": "FALSE",
+            "XInterval": 128.0,
+            "XMax": 896.0,
+            "XMin": 0.0,
+            "YInterval": 200.0,
+            "YMax": 1000.0,
+            "YMin": -200.0
+        },
+        "13": {
+            "DensityCount": 4,
+            "DensitySize": 2,
+            "DisplayHeatmap": "FALSE",
+            "XInterval": 128.0,
+            "XMax": 896.0,
+            "XMin": 0.0,
+            "YInterval": 200.0,
+            "YMax": 1000.0,
+            "YMin": -200.0
+        },
+        "14": {
+            "DensityCount": 4,
+            "DensitySize": 2,
+            "DisplayHeatmap": "FALSE",
+            "XInterval": 128.0,
+            "XMax": 896.0,
+            "XMin": 0.0,
+            "YInterval": 200.0,
+            "YMax": 1000.0,
+            "YMin": -200.0
+        },
+        "15": {
+            "DensityCount": 4,
+            "DensitySize": 2,
+            "DisplayHeatmap": "FALSE",
+            "XInterval": 128.0,
+            "XMax": 896.0,
+            "XMin": 0.0,
+            "YInterval": 200.0,
+            "YMax": 1000.0,
+            "YMin": -200.0
+        },
+        "2": {
+            "DensityCount": 4,
+            "DensitySize": 2,
+            "DisplayHeatmap": "FALSE",
+            "XInterval": 128.0,
+            "XMax": 896.0,
+            "XMin": 0.0,
+            "YInterval": 200.0,
+            "YMax": 1000.0,
+            "YMin": -200.0
+        },
+        "3": {
+            "DensityCount": 4,
+            "DensitySize": 2,
+            "DisplayHeatmap": "FALSE",
+            "XInterval": 128.0,
+            "XMax": 896.0,
+            "XMin": 0.0,
+            "YInterval": 200.0,
+            "YMax": 1000.0,
+            "YMin": -200.0
+        },
+        "4": {
+            "DensityCount": 4,
+            "DensitySize": 2,
+            "DisplayHeatmap": "FALSE",
+            "XInterval": 128.0,
+            "XMax": 896.0,
+            "XMin": 0.0,
+            "YInterval": 200.0,
+            "YMax": 1000.0,
+            "YMin": -200.0
+        },
+        "5": {
+            "DensityCount": 4,
+            "DensitySize": 2,
+            "DisplayHeatmap": "FALSE",
+            "XInterval": 128.0,
+            "XMax": 896.0,
+            "XMin": 0.0,
+            "YInterval": 200.0,
+            "YMax": 1000.0,
+            "YMin": -200.0
+        },
+        "6": {
+            "DensityCount": 4,
+            "DensitySize": 2,
+            "DisplayHeatmap": "FALSE",
+            "XInterval": 128.0,
+            "XMax": 896.0,
+            "XMin": 0.0,
+            "YInterval": 200.0,
+            "YMax": 1000.0,
+            "YMin": -200.0
+        },
+        "7": {
+            "DensityCount": 4,
+            "DensitySize": 2,
+            "DisplayHeatmap": "FALSE",
+            "XInterval": 128.0,
+            "XMax": 896.0,
+            "XMin": 0.0,
+            "YInterval": 200.0,
+            "YMax": 1000.0,
+            "YMin": -200.0
+        },
+        "8": {
+            "DensityCount": 4,
+            "DensitySize": 2,
+            "DisplayHeatmap": "FALSE",
+            "XInterval": 128.0,
+            "XMax": 896.0,
+            "XMin": 0.0,
+            "YInterval": 250.0,
+            "YMax": 500.0,
+            "YMin": -200.0
+        },
+        "9": {
+            "DensityCount": 4,
+            "DensitySize": 2,
+            "DisplayHeatmap": "FALSE",
+            "XInterval": 128.0,
+            "XMax": 896.0,
+            "XMin": 0.0,
+            "YInterval": 50.0,
+            "YMax": 500.0,
+            "YMin": -200.0
+        },
+        "bDrawStop": false
+    },
+    "RealMonAll": {
+        "Overwrite": 10
+    }
+}

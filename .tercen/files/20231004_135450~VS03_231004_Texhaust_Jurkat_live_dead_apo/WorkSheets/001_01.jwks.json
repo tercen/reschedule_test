@@ -1,0 +1,43 @@
+{
+ "kind": "FileDocument",
+ "id": "20231004_135450~VS03_231004_Texhaust_Jurkat_live_dead_apo/WorkSheets/001_01.jwks",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "001_01.jwks",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "1",
+ "dataUri": "lfs/8e/3d/07e810f05c84d1190eb2d30be6c20f6510b36d0d0435e771504d73332fc5",
+ "metadata": {
+  "kind": "FileMetadata",
+  "contentType": "",
+  "cacheControl": "",
+  "contentEncoding": "",
+  "contentLanguage": "",
+  "md5Hash": "11769b0194f003dd679e5bcda398219e"
+ },
+ "size": 80892,
+ "storageSize": 80892.0
+}

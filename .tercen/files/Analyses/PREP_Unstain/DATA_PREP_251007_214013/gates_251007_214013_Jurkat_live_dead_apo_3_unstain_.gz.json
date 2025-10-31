@@ -1,0 +1,43 @@
+{
+ "kind": "FileDocument",
+ "id": "Analyses/PREP_Unstain/DATA_PREP_251007_214013/gates_251007_214013_Jurkat_live_dead_apo_3_unstain_.gz",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "gates_251007_214013_Jurkat_live_dead_apo_3_unstain_.gz",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": true,
+ "projectId": "",
+ "folderId": "9",
+ "dataUri": "lfs/f7/14/7c8dea648f5c751cdb31155070b05a855503ad62248b25baced43d72df41",
+ "metadata": {
+  "kind": "FileMetadata",
+  "contentType": "",
+  "cacheControl": "",
+  "contentEncoding": "gzip",
+  "contentLanguage": "",
+  "md5Hash": ""
+ },
+ "size": 26948,
+ "storageSize": 26948.0
+}

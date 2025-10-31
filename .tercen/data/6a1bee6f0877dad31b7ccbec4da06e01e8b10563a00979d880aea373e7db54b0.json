@@ -1,0 +1,85 @@
+{
+ "kind": "TableSchema",
+ "id": "6a1bee6f0877dad31b7ccbec4da06e01e8b10563a00979d880aea373e7db54b0",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "Event IDs",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "hidden",
+   "value": "true"
+  },
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "6a1bee6f0877dad31b7ccbec4da06e01e8b10563a00979d880aea373e7db54b0"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "9",
+ "nRows": 7423,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "9dbb6402-74a9-4b23-8d51-7fbbf1d4303b",
+   "name": ".gcs_id2",
+   "type": "int32",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "fbb2d022-c033-45c7-82c4-f71bc1e057a9",
+   "name": "event_id",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  }
+ ],
+ "dataDirectory": "data/6a/1b/6a1bee6f0877dad31b7ccbec4da06e01e8b10563a00979d880aea373e7db54b0",
+ "relation": {
+  "kind": "Relation",
+  "id": "b85f3c8a-cb18-4707-bc71-9c9148e47c6a"
+ },
+ "size": 26512,
+ "storageSize": 26512.0
+}

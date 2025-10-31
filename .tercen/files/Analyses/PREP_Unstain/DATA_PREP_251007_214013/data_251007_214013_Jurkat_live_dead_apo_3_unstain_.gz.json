@@ -1,0 +1,43 @@
+{
+ "kind": "FileDocument",
+ "id": "Analyses/PREP_Unstain/DATA_PREP_251007_214013/data_251007_214013_Jurkat_live_dead_apo_3_unstain_.gz",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "data_251007_214013_Jurkat_live_dead_apo_3_unstain_.gz",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": true,
+ "projectId": "",
+ "folderId": "9",
+ "dataUri": "lfs/85/51/b7389b2c7b563880e5556430474ab48fb97281f5c4e62c708e67dc57234b",
+ "metadata": {
+  "kind": "FileMetadata",
+  "contentType": "",
+  "cacheControl": "",
+  "contentEncoding": "gzip",
+  "contentLanguage": "",
+  "md5Hash": ""
+ },
+ "size": 81347792,
+ "storageSize": 81347792.0
+}

@@ -1,0 +1,422 @@
+{
+ "kind": "ComputedTableSchema",
+ "id": "8bb61d15db82d85853a9fcfcfddb04dccec11889f5fe9d94cc35e61ec5f504b4",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "Plots",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "8bb61d15db82d85853a9fcfcfddb04dccec11889f5fe9d94cc35e61ec5f504b4"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "",
+ "nRows": 2,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "ac2806bf-3068-46c3-ba91-60324d2810cd",
+   "name": "ds1.SPEC",
+   "type": "int32",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "90479de0-9908-44c8-b54e-3baf831d570d",
+   "name": "ds1.filename",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "a48ef8c0-851f-425c-9e0a-9c74ca037f00",
+   "name": "ds1.mimetype",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "fde484e5-d290-42fb-9d0b-da1c424a7b76",
+   "name": "ds1.checksum",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "ce474c2e-6b6e-4294-9a19-4b40b19ccd9e",
+   "name": ".content",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  }
+ ],
+ "dataDirectory": "data/8b/b6/8bb61d15db82d85853a9fcfcfddb04dccec11889f5fe9d94cc35e61ec5f504b4",
+ "relation": {
+  "kind": "Relation",
+  "id": "bbc1610b-2570-45e1-bac5-79810b700063"
+ },
+ "size": 269584,
+ "storageSize": 269584.0,
+ "query": {
+  "kind": "CubeQuery",
+  "relation": {
+   "kind": "CompositeRelation",
+   "id": "b38cb1cb-9cbe-4cb0-aa00-a7aed3d754a1",
+   "joinOperators": [
+    {
+     "kind": "JoinOperator",
+     "joinType": "leftOuter",
+     "leftPair": {
+      "kind": "ColumnPair",
+      "lColumns": [],
+      "rColumns": []
+     },
+     "rightRelation": {
+      "kind": "SimpleRelation",
+      "id": "d8fd9e43020cdb7c2e82337d8fc32f4010adaf27ff0abc6f374766dd8a69b1d7",
+      "index": 0
+     }
+    }
+   ],
+   "mainRelation": {
+    "kind": "RenameRelation",
+    "id": "e5fd59cb-758a-4971-a6b5-ee4b5af07229",
+    "relation": {
+     "kind": "InMemoryRelation",
+     "id": "4da85507-ec9a-4a53-a2b5-122716f80a6d",
+     "inMemoryTable": {
+      "kind": "Table",
+      "nRows": 1,
+      "properties": {
+       "kind": "TableProperties",
+       "name": "",
+       "sortOrder": [],
+       "ascending": true
+      },
+      "columns": [
+       {
+        "kind": "Column",
+        "id": "documentId",
+        "name": "documentId",
+        "type": "string",
+        "nRows": 1,
+        "size": -1,
+        "metaData": {
+         "kind": "ColumnSchemaMetaData",
+         "sort": [],
+         "ascending": true,
+         "quartiles": [],
+         "properties": []
+        },
+        "storageSize": 0.0,
+        "cValues": {
+         "kind": "CValues"
+        },
+        "values": [
+         "f67b4bb5-8e33-41f7-984a-399564348296"
+        ]
+       },
+       {
+        "kind": "Column",
+        "id": ".documentId",
+        "name": ".documentId",
+        "type": "string",
+        "nRows": 1,
+        "size": -1,
+        "metaData": {
+         "kind": "ColumnSchemaMetaData",
+         "sort": [],
+         "ascending": true,
+         "quartiles": [],
+         "properties": []
+        },
+        "storageSize": 0.0,
+        "cValues": {
+         "kind": "CValues"
+        },
+        "values": [
+         "20231004_135450~VS03_231004_Texhaust_Jurkat_live_dead_apo/experiment.jexp"
+        ]
+       }
+      ]
+     }
+    },
+    "inNames": [
+     "documentId",
+     ".documentId"
+    ],
+    "outNames": [
+     "documentId",
+     ".documentId"
+    ]
+   }
+  },
+  "colColumns": [],
+  "rowColumns": [
+   {
+    "kind": "Factor",
+    "name": "documentId",
+    "type": "string"
+   },
+   {
+    "kind": "Factor",
+    "name": "ds0.Spec_Name",
+    "type": "string"
+   },
+   {
+    "kind": "Factor",
+    "name": "ds0.Tube_Name",
+    "type": "string"
+   },
+   {
+    "kind": "Factor",
+    "name": "ds0.Comment",
+    "type": "string"
+   },
+   {
+    "kind": "Factor",
+    "name": "ds0.gcs_documentId",
+    "type": "string"
+   }
+  ],
+  "axisQueries": [
+   {
+    "kind": "CubeAxisQuery",
+    "pointSize": 4,
+    "chartType": "point",
+    "yAxis": {
+     "kind": "Factor",
+     "name": "",
+     "type": "string"
+    },
+    "yAxisSettings": {
+     "kind": "AxisSettings",
+     "meta": []
+    },
+    "xAxis": {
+     "kind": "Factor",
+     "name": "",
+     "type": "string"
+    },
+    "xAxisSettings": {
+     "kind": "AxisSettings",
+     "meta": []
+    },
+    "errors": [],
+    "labels": [],
+    "colors": [],
+    "preprocessors": []
+   }
+  ],
+  "filters": {
+   "kind": "Filters",
+   "removeNaN": true,
+   "namedFilters": [
+    {
+     "kind": "NamedFilter",
+     "logical": "or",
+     "not": false,
+     "filterExprs": [
+      {
+       "kind": "Filter",
+       "logical": "and",
+       "not": false,
+       "filterExprs": [
+        {
+         "kind": "FilterExpr",
+         "filterOp": "equals",
+         "stringValue": "Jurkat_live_dead_apo",
+         "factor": {
+          "kind": "Factor",
+          "name": "ds0.Spec_Name",
+          "type": "string"
+         },
+         "preProcessors": []
+        },
+        {
+         "kind": "FilterExpr",
+         "filterOp": "equals",
+         "stringValue": "3_unstain",
+         "factor": {
+          "kind": "Factor",
+          "name": "ds0.Tube_Name",
+          "type": "string"
+         },
+         "preProcessors": []
+        },
+        {
+         "kind": "FilterExpr",
+         "filterOp": "equals",
+         "stringValue": "",
+         "factor": {
+          "kind": "Factor",
+          "name": "ds0.Comment",
+          "type": "string"
+         },
+         "preProcessors": []
+        }
+       ]
+      }
+     ],
+     "meta": [],
+     "name": "TubeFilter"
+    }
+   ]
+  },
+  "operatorSettings": {
+   "kind": "OperatorSettings",
+   "namespace": "ds1",
+   "operatorRef": {
+    "kind": "OperatorRef",
+    "name": "Data prepare operator",
+    "version": "0.11.5",
+    "operatorId": "4",
+    "operatorKind": "DockerOperator",
+    "propertyValues": [
+     {
+      "kind": "PropertyValue",
+      "name": "Plot limit percentile",
+      "value": "99"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "Margin Ratio",
+      "value": "0.1"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "Max cells per tube",
+      "value": "-1"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "Downsampling ratio",
+      "value": "-1"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "[EXPORT] Run Prefix",
+      "value": ""
+     }
+    ],
+    "url": {
+     "kind": "Url",
+     "uri": "https://github.com/tercen/kumo_data_prep_operator"
+    },
+    "operatorSpec": {
+     "kind": "OperatorSpec",
+     "ontologyUri": "",
+     "ontologyVersion": "",
+     "inputSpecs": [],
+     "outputSpecs": []
+    }
+   },
+   "environment": [
+    {
+     "kind": "Pair",
+     "key": "cpu",
+     "value": "0"
+    },
+    {
+     "kind": "Pair",
+     "key": "ram",
+     "value": "0"
+    },
+    {
+     "kind": "Pair",
+     "key": "cpu-shares",
+     "value": "0"
+    },
+    {
+     "kind": "Pair",
+     "key": "tercen.collect.stats",
+     "value": "false"
+    },
+    {
+     "kind": "Pair",
+     "key": "debug",
+     "value": "false"
+    },
+    {
+     "kind": "Pair",
+     "key": "preferred.run.ctx",
+     "value": "server"
+    }
+   ],
+   "operatorModel": {
+    "kind": "OperatorModel"
+   }
+  },
+  "qtHash": "",
+  "columnHash": "",
+  "rowHash": ""
+ }
+}

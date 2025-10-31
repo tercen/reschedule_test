@@ -1,0 +1,49 @@
+{
+ "kind": "FileDocument",
+ "id": "Analyses/PREP_Unstain/DATA_PREP_251007_214013/README.md",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "README.md",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "WORKFLOW_ID",
+   "value": "3247063a1fa73540364780a9681b36dd"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": true,
+ "projectId": "",
+ "folderId": "9",
+ "dataUri": "lfs/b3/fe/6e7ada82c05119d5faab9d0cd98503d98b566f1024cbd58be3b6de743f73",
+ "metadata": {
+  "kind": "FileMetadata",
+  "contentType": "text/markdown",
+  "cacheControl": "",
+  "contentEncoding": "",
+  "contentLanguage": "",
+  "md5Hash": ""
+ },
+ "size": 233,
+ "storageSize": 233.0
+}

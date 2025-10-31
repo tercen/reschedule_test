@@ -1,0 +1,922 @@
+{
+ "kind": "Workflow",
+ "id": "11",
+ "isDeleted": false,
+ "rev": "",
+ "description": "A workflow to run in parallel SVC/LightGBM and UMAP.",
+ "name": "SVM_LGBM_G34_20251007_094611",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "PUBLISHED",
+   "value": "true"
+  },
+  {
+   "kind": "Pair",
+   "key": "setting.Mode",
+   "value": "SVM"
+  },
+  {
+   "kind": "Pair",
+   "key": "setting.[DATA PREP] Detector List",
+   "value": "bfgmi,bsgmi,dgmi,fsgmi"
+  },
+  {
+   "kind": "Pair",
+   "key": "setting.[DATA PREP] Combine Multiple Tubes",
+   "value": "true"
+  },
+  {
+   "kind": "Pair",
+   "key": "setting.[DATA PREP] Background correction",
+   "value": "false"
+  },
+  {
+   "kind": "Pair",
+   "key": "setting.[DATA PREP] Train Ratio",
+   "value": "0.8"
+  },
+  {
+   "kind": "Pair",
+   "key": "setting.[DATA PREP] N Train",
+   "value": "auto"
+  },
+  {
+   "kind": "Pair",
+   "key": "setting.[DATA PREP] N Test",
+   "value": "auto"
+  },
+  {
+   "kind": "Pair",
+   "key": "setting.[DATA PREP] Original Ratio Train",
+   "value": "false"
+  },
+  {
+   "kind": "Pair",
+   "key": "setting.[DATA PREP] Original Ratio Test",
+   "value": "true"
+  },
+  {
+   "kind": "Pair",
+   "key": "setting.[DATA PREP] Smooth",
+   "value": "1"
+  },
+  {
+   "kind": "Pair",
+   "key": "setting.Seed",
+   "value": "42"
+  },
+  {
+   "kind": "Pair",
+   "key": "workflow.type",
+   "value": "ml"
+  },
+  {
+   "kind": "Pair",
+   "key": "kumo.workflow",
+   "value": "true"
+  },
+  {
+   "kind": "Pair",
+   "key": "data.prep.workflow",
+   "value": "3247063a1fa73540364780a9681b36dd"
+  },
+  {
+   "kind": "Pair",
+   "key": "hidden",
+   "value": "false"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "7",
+ "links": [
+  {
+   "kind": "Link",
+   "id": "a0fe43f9-263d-4928-885d-3e154b35b098",
+   "inputId": "c9cfa067-a21d-48c7-847b-4e62355c1fbf-i-0",
+   "outputId": "ea37e940-2708-4fa4-a81d-d67079d53d68-o-0"
+  }
+ ],
+ "steps": [
+  {
+   "kind": "TableStep",
+   "id": "ea37e940-2708-4fa4-a81d-d67079d53d68",
+   "groupId": "",
+   "name": "Prep_*.csv",
+   "inputs": [],
+   "outputs": [
+    {
+     "kind": "OutputPort",
+     "id": "ea37e940-2708-4fa4-a81d-d67079d53d68-o-0",
+     "linkType": "relation",
+     "name": "table"
+    }
+   ],
+   "rectangle": {
+    "kind": "Rectangle",
+    "extent": {
+     "kind": "Point",
+     "x": 88.99000000000001,
+     "y": 55.0
+    },
+    "topLeft": {
+     "kind": "Point",
+     "x": 213.505,
+     "y": -75.5
+    }
+   },
+   "state": {
+    "kind": "StepState",
+    "taskId": "",
+    "taskState": {
+     "kind": "DoneState"
+    }
+   },
+   "description": "A table of specimen and tubes' contents to choose from.",
+   "model": {
+    "kind": "TableStepModel",
+    "relation": {
+     "kind": "RenameRelation",
+     "id": "rename_3247063a1fa73540364780a96822c0b7",
+     "relation": {
+      "kind": "ReferenceRelation",
+      "id": "10",
+      "relation": {
+       "kind": "CompositeRelation",
+       "id": "8771053c-0fe8-48c5-b678-69d45364a93a",
+       "joinOperators": [
+        {
+         "kind": "JoinOperator",
+         "joinType": "",
+         "leftPair": {
+          "kind": "ColumnPair",
+          "lColumns": [
+           "Tube"
+          ],
+          "rColumns": [
+           "ds0.Tube_Name"
+          ]
+         },
+         "rightRelation": {
+          "kind": "SimpleRelation",
+          "id": "6d5d921c13fde8dd1117ac845963c0f4628aa20924e5a2229edfe8d282fa4f96",
+          "index": 0
+         }
+        },
+        {
+         "kind": "JoinOperator",
+         "joinType": "",
+         "leftPair": {
+          "kind": "ColumnPair",
+          "lColumns": [
+           "gcs_pickle_id"
+          ],
+          "rColumns": [
+           ".gcs_id2"
+          ]
+         },
+         "rightRelation": {
+          "kind": "SimpleRelation",
+          "id": "6a1bee6f0877dad31b7ccbec4da06e01e8b10563a00979d880aea373e7db54b0",
+          "index": 0
+         }
+        },
+        {
+         "kind": "JoinOperator",
+         "joinType": "",
+         "leftPair": {
+          "kind": "ColumnPair",
+          "lColumns": [
+           ".gcs_id2"
+          ],
+          "rColumns": [
+           ".gcs_id2"
+          ]
+         },
+         "rightRelation": {
+          "kind": "SimpleRelation",
+          "id": "eaa313d9cccdc756f3c82214139ec1936246f42f08e1b759d60ecde2c35f79e8",
+          "index": 0
+         }
+        },
+        {
+         "kind": "JoinOperator",
+         "joinType": "",
+         "leftPair": {
+          "kind": "ColumnPair",
+          "lColumns": [
+           ".gcs_id2",
+           "event_id",
+           "Gate"
+          ],
+          "rColumns": [
+           ".gcs_id2",
+           ".event_id",
+           "GateName"
+          ]
+         },
+         "rightRelation": {
+          "kind": "SimpleRelation",
+          "id": "292d1dc1300d254fa025598ab42cee1a6f44734aa00ca7046c42550cdd7c5745",
+          "index": 0
+         }
+        },
+        {
+         "kind": "JoinOperator",
+         "joinType": "",
+         "leftPair": {
+          "kind": "ColumnPair",
+          "lColumns": [
+           ".gcs_id2",
+           "event_id"
+          ],
+          "rColumns": [
+           ".gcs_id2",
+           ".event_id"
+          ]
+         },
+         "rightRelation": {
+          "kind": "SimpleRelation",
+          "id": "2756131fd99294f36c8e47e549b0b42c6df51b544b511386da299d93e6b9c25b",
+          "index": 0
+         }
+        }
+       ],
+       "mainRelation": {
+        "kind": "SimpleRelation",
+        "id": "f3a447ab3a45a81427f0592d348347a2ad0e8c9717c80b36809519a5ca84069e",
+        "index": 0
+       }
+      }
+     },
+     "inNames": [
+      "Specimen",
+      "Tube",
+      "Comment",
+      "roi",
+      ".ri",
+      "gcs_pickle_filename",
+      "gcs_documentId",
+      "gcs_pickle_id",
+      "documentId",
+      "ds0.Spec_Name",
+      "ds0.Tube_Name",
+      "ds0.Comment",
+      "ds0.gcs_documentId",
+      ".gcs_id2",
+      "event_id",
+      "gcs_gate_documentId",
+      "gcs_gate_document_name",
+      "Gate",
+      "Events Count",
+      ".event_id",
+      "GateName",
+      "GateMember",
+      "fsc_comp_h",
+      "bsc_comp_h",
+      "fl1_405_comp_h",
+      "fl2_488_comp_h",
+      "fl3_488_comp_h",
+      "fl4_488_comp_h",
+      "fl5_637_comp_h",
+      "na_a_comp_h",
+      "fsgmi_comp_h",
+      "bsgmi_comp_h",
+      "dgmi_comp_h",
+      "bfgmi_comp_h"
+     ],
+     "outNames": [
+      "Specimen",
+      "Tube",
+      "Comment",
+      "roi",
+      ".ri",
+      "gcs_pickle_filename",
+      "gcs_documentId",
+      "gcs_pickle_id",
+      "documentId",
+      "ds0.Spec_Name",
+      "ds0.Tube_Name",
+      "ds0.Comment",
+      "ds0.gcs_documentId",
+      ".gcs_id2",
+      "event_id",
+      "gcs_gate_documentId",
+      "gcs_gate_document_name",
+      "Gate",
+      "Events Count",
+      ".event_id",
+      "GateName",
+      "GateMember",
+      "fsc_comp_h",
+      "bsc_comp_h",
+      "fl1_405_comp_h",
+      "fl2_488_comp_h",
+      "fl3_488_comp_h",
+      "fl4_488_comp_h",
+      "fl5_637_comp_h",
+      "na_a_comp_h",
+      "fsgmi_comp_h",
+      "bsgmi_comp_h",
+      "dgmi_comp_h",
+      "bfgmi_comp_h"
+     ]
+    },
+    "filterSelector": "Prep_"
+   }
+  },
+  {
+   "kind": "DataStep",
+   "id": "c9cfa067-a21d-48c7-847b-4e62355c1fbf",
+   "groupId": "",
+   "name": "Train SVM/LightGBM",
+   "inputs": [
+    {
+     "kind": "InputPort",
+     "id": "c9cfa067-a21d-48c7-847b-4e62355c1fbf-i-0",
+     "linkType": "relation",
+     "name": "data"
+    }
+   ],
+   "outputs": [
+    {
+     "kind": "OutputPort",
+     "id": "c9cfa067-a21d-48c7-847b-4e62355c1fbf-o-0",
+     "linkType": "relation",
+     "name": "data"
+    }
+   ],
+   "rectangle": {
+    "kind": "Rectangle",
+    "extent": {
+     "kind": "Point",
+     "x": 138.80352783203125,
+     "y": 55.0
+    },
+    "topLeft": {
+     "kind": "Point",
+     "x": 188.59823608398438,
+     "y": 68.5
+    }
+   },
+   "state": {
+    "kind": "StepState",
+    "taskId": "",
+    "taskState": {
+     "kind": "InitState"
+    }
+   },
+   "description": "Perform computation on user defined projection.",
+   "model": {
+    "kind": "Crosstab",
+    "axis": {
+     "kind": "XYAxisList",
+     "rectangleSelections": [],
+     "xyAxis": [
+      {
+       "kind": "XYAxis",
+       "chart": {
+        "kind": "ChartPoint",
+        "name": "",
+        "properties": {
+         "kind": "Properties",
+         "properties": [],
+         "propertyValues": []
+        },
+        "pointSize": 4
+       },
+       "colors": {
+        "kind": "Colors",
+        "factors": [],
+        "palette": {
+         "kind": "CategoryPalette",
+         "backcolor": 0,
+         "properties": [],
+         "colorList": {
+          "kind": "ColorList",
+          "name": ""
+         },
+         "stringColorElements": []
+        }
+       },
+       "errors": {
+        "kind": "Errors",
+        "factors": []
+       },
+       "labels": {
+        "kind": "Labels",
+        "factors": []
+       },
+       "xAxis": {
+        "kind": "Axis",
+        "axisExtent": {
+         "kind": "Point",
+         "x": 80.0,
+         "y": 30.0
+        },
+        "axisSettings": {
+         "kind": "AxisSettings",
+         "meta": []
+        },
+        "graphicalFactor": {
+         "kind": "GraphicalFactor",
+         "factor": {
+          "kind": "Factor",
+          "name": "",
+          "type": "string"
+         },
+         "rectangle": {
+          "kind": "Rectangle",
+          "extent": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          },
+          "topLeft": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          }
+         }
+        }
+       },
+       "yAxis": {
+        "kind": "Axis",
+        "axisExtent": {
+         "kind": "Point",
+         "x": 80.0,
+         "y": 30.0
+        },
+        "axisSettings": {
+         "kind": "AxisSettings",
+         "meta": []
+        },
+        "graphicalFactor": {
+         "kind": "GraphicalFactor",
+         "factor": {
+          "kind": "Factor",
+          "name": "GateMember",
+          "type": "double"
+         },
+         "rectangle": {
+          "kind": "Rectangle",
+          "extent": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          },
+          "topLeft": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          }
+         }
+        }
+       },
+       "taskId": "",
+       "preprocessors": []
+      }
+     ]
+    },
+    "columnTable": {
+     "kind": "CrosstabTable",
+     "cellSize": 7.036874417766401,
+     "offset": 0,
+     "graphicalFactors": [
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "event_id",
+        "type": "double"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 30.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      }
+     ],
+     "rectangleSelections": [],
+     "nRows": 7423
+    },
+    "filters": {
+     "kind": "Filters",
+     "removeNaN": true,
+     "namedFilters": [
+      {
+       "kind": "NamedFilter",
+       "logical": "or",
+       "not": false,
+       "filterExprs": [
+        {
+         "kind": "Filter",
+         "logical": "and",
+         "not": false,
+         "filterExprs": [
+          {
+           "kind": "FilterExpr",
+           "filterOp": "equals",
+           "stringValue": "Jurkat_live_dead_apo",
+           "factor": {
+            "kind": "Factor",
+            "name": "Specimen",
+            "type": "string"
+           },
+           "preProcessors": []
+          },
+          {
+           "kind": "FilterExpr",
+           "filterOp": "equals",
+           "stringValue": "3_unstain",
+           "factor": {
+            "kind": "Factor",
+            "name": "Tube",
+            "type": "string"
+           },
+           "preProcessors": []
+          },
+          {
+           "kind": "FilterExpr",
+           "filterOp": "equals",
+           "stringValue": "gate_quad3",
+           "factor": {
+            "kind": "Factor",
+            "name": "GateName",
+            "type": "string"
+           },
+           "preProcessors": []
+          }
+         ]
+        },
+        {
+         "kind": "Filter",
+         "logical": "and",
+         "not": false,
+         "filterExprs": [
+          {
+           "kind": "FilterExpr",
+           "filterOp": "equals",
+           "stringValue": "Jurkat_live_dead_apo",
+           "factor": {
+            "kind": "Factor",
+            "name": "Specimen",
+            "type": "string"
+           },
+           "preProcessors": []
+          },
+          {
+           "kind": "FilterExpr",
+           "filterOp": "equals",
+           "stringValue": "3_unstain",
+           "factor": {
+            "kind": "Factor",
+            "name": "Tube",
+            "type": "string"
+           },
+           "preProcessors": []
+          },
+          {
+           "kind": "FilterExpr",
+           "filterOp": "equals",
+           "stringValue": "gate_quad4",
+           "factor": {
+            "kind": "Factor",
+            "name": "GateName",
+            "type": "string"
+           },
+           "preProcessors": []
+          }
+         ]
+        }
+       ],
+       "meta": [],
+       "name": "TubeSpecimenGate"
+      }
+     ]
+    },
+    "operatorSettings": {
+     "kind": "OperatorSettings",
+     "namespace": "model",
+     "operatorRef": {
+      "kind": "OperatorRef",
+      "name": "Train SVM/LGBM operator",
+      "version": "a0f4cbdc91638f2e1261ea376191f05106af8321",
+      "operatorId": "2",
+      "operatorKind": "DockerOperator",
+      "propertyValues": [
+       {
+        "kind": "PropertyValue",
+        "name": "Mode",
+        "value": "SVM"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "[DATA PREP] Combine Multiple Tubes",
+        "value": "true"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "[DATA PREP] Background correction",
+        "value": "false"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "[DATA PREP] Detector List",
+        "value": "bfgmi,bsgmi,dgmi,fsgmi"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "[DATA PREP] Train Ratio",
+        "value": "0.8"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "[DATA PREP] N Train",
+        "value": "auto"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "[DATA PREP] N Test",
+        "value": "auto"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "[DATA PREP] Max N Events",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "[DATA PREP] Original Ratio Train",
+        "value": "false"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "[DATA PREP] Original Ratio Test",
+        "value": "true"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "[DATA PREP] Smooth",
+        "value": "1"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "Seed",
+        "value": "42"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "[EXPORT] Run Prefix",
+        "value": ""
+       }
+      ],
+      "url": {
+       "kind": "Url",
+       "uri": "https://github.com/tercen/kumo_model_train_operator"
+      },
+      "operatorSpec": {
+       "kind": "OperatorSpec",
+       "ontologyUri": "",
+       "ontologyVersion": "",
+       "inputSpecs": [],
+       "outputSpecs": []
+      }
+     },
+     "environment": [
+      {
+       "kind": "Pair",
+       "key": "cpu",
+       "value": "0"
+      },
+      {
+       "kind": "Pair",
+       "key": "ram",
+       "value": "0"
+      },
+      {
+       "kind": "Pair",
+       "key": "cpu-shares",
+       "value": "0"
+      },
+      {
+       "kind": "Pair",
+       "key": "tercen.collect.stats",
+       "value": "false"
+      },
+      {
+       "kind": "Pair",
+       "key": "debug",
+       "value": "false"
+      },
+      {
+       "kind": "Pair",
+       "key": "preferred.run.ctx",
+       "value": "server"
+      }
+     ],
+     "operatorModel": {
+      "kind": "OperatorModel"
+     }
+    },
+    "rowTable": {
+     "kind": "CrosstabTable",
+     "cellSize": 17.179869184000005,
+     "offset": 0,
+     "graphicalFactors": [
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "Specimen",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 80.0,
+         "y": 0.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      },
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "Tube",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 40.0,
+         "y": 30.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      },
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "roi",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 30.0,
+         "y": 30.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      },
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "Gate",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 40.0,
+         "y": 30.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      },
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "gcs_pickle_id",
+        "type": "int32"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 130.0,
+         "y": 30.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      },
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "gcs_documentId",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 140.0,
+         "y": 30.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      },
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "Events Count",
+        "type": "int32"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 120.0,
+         "y": 30.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      }
+     ],
+     "rectangleSelections": [],
+     "nRows": 2
+    },
+    "taskId": ""
+   },
+   "computedRelation": {
+    "kind": "Relation",
+    "id": "9d0ed754-d174-4e31-91ba-a5bc60dc9cf7"
+   },
+   "parentDataStepId": ""
+  }
+ ],
+ "offset": {
+  "kind": "Point",
+  "x": 266.0,
+  "y": 130.0
+ },
+ "scale": 1.0
+}

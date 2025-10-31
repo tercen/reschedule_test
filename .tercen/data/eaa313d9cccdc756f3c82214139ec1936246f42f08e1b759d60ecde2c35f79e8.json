@@ -1,0 +1,133 @@
+{
+ "kind": "TableSchema",
+ "id": "eaa313d9cccdc756f3c82214139ec1936246f42f08e1b759d60ecde2c35f79e8",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "GCS Gating Summary",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "hidden",
+   "value": "true"
+  },
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "eaa313d9cccdc756f3c82214139ec1936246f42f08e1b759d60ecde2c35f79e8"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "9",
+ "nRows": 15,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "40b9e5cb-a283-4726-a414-702eb8d422be",
+   "name": ".gcs_id2",
+   "type": "int32",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "9222efd0-50b4-4cfc-9b42-e4430b9bfa0f",
+   "name": "gcs_gate_documentId",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "dcdf7f0e-b22d-4ca0-9295-2256812b1cc9",
+   "name": "gcs_gate_document_name",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "33bbb531-f432-4358-bb16-32b7089be97a",
+   "name": "Gate",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "884f054d-22ce-4c72-92a8-cb30792c893e",
+   "name": "Events Count",
+   "type": "int32",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   },
+   "storageSize": 0.0
+  }
+ ],
+ "dataDirectory": "data/ea/a3/eaa313d9cccdc756f3c82214139ec1936246f42f08e1b759d60ecde2c35f79e8",
+ "relation": {
+  "kind": "Relation",
+  "id": "4377bba5-2c44-4e08-986d-e4de0d84d85f"
+ },
+ "size": 2404,
+ "storageSize": 2404.0
+}

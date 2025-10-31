@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config Version="1.17">
+  <Product ID="VS03" Revision="20230822" />
+  <Application Version="v2.0.6.96" CommitID="cc2c71a3" Mode="Sorter" GraphUpdateWaitCount="4" />
+  <Authority Role="" />
+  <Devices>
+    <Lasers>
+      <Source Manufacturer="Coherent" Type="ScientificRemote" COM="16" BaudRate="115200" Name="SciRemote" ReturnCode="CR">
+        <Device Name="Obis1 405nm" PresetPower="365" PresetMarginPercentage="5" Type="LX"/>
+        <Device Name="Obis2 488nm" PresetPower="150" PresetMarginPercentage="5" Type="LS"/>
+        <Device Name="Obis3 637nm" PresetPower="160" PresetMarginPercentage="5" Type="LX"/>
+      </Source>
+    </Lasers>
+    <Detectors Manufacturer="OMEGA" Type="OM-USB-3105" PhysicalChannel="0" VoltMin="0.0" VoltMax="10.0">
+      <Detector Name="FSC" Manufacturer="Hamamatsu" Type="H10723-210MOD2" Serial="" WaveMin="230" WaveMax="700" WaveCenter="637" CH="1" RegionNum="1" VoltMin="0.0" VoltMax="1.0" Filter="" TriggerThreshold="20.0" SaveOff="False" Fixed="True" Gain="0.0">
+        <Channel Name="FSC" Begin="0" End="499" PulseDetector = "HW" FPGAChannelIndex="0"/>
+        <Channel Name="FSC-405" Begin="100" End="170" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="FSC-488" Begin="720" End="830" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="FSC-637" Begin="200" End="260" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <HPF On ="1" Epsilon ="1" DownSample ="8" CutoffFrequency="2000"/>
+      </Detector>
+      <Detector Name="BSC" Manufacturer="Hamamatsu" Type="H10723-210MOD2" Serial="" WaveMin="230" WaveMax="700" WaveCenter="637" CH="2" RegionNum="1" VoltMin="0.0" VoltMax="1.0" Filter="" TriggerThreshold="20.0" SaveOff="False" Fixed="False" Gain="0.0">
+        <Channel Name="BSC" Begin="0" End="499" PulseDetector = "HW" FPGAChannelIndex="1"/>
+        <Channel Name="BSC-B" Begin="100" End="180" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="BSC-C" Begin="200" End="280" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="BSC-D" Begin="300" End="380" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <HPF On ="1" Epsilon ="1" DownSample ="8" CutoffFrequency="2000"/>
+      </Detector>
+      <Detector Name="FL1" Manufacturer="Hamamatsu" Type="H10723-210MOD2" Serial="" WaveMin="230" WaveMax="700" WaveCenter="440" CH="3" RegionNum="1" VoltMin="0.0" VoltMax="1.0" Filter="" TriggerThreshold="20.0" SaveOff="False" Fixed="False" Gain="0.0">
+        <Channel Name="FL1-405" Begin="110" End="150" PulseDetector = "HW" FPGAChannelIndex="2"/>
+        <Channel Name="FL1-B" Begin="100" End="180" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="FL1-C" Begin="200" End="280" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="FL1-D" Begin="300" End="380" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <HPF On ="1" Epsilon ="1" DownSample ="8" CutoffFrequency="2000"/>
+      </Detector>
+	    <Detector Name="FL2" Manufacturer="Hamamatsu" Type="H10723-210MOD2" Serial="" WaveMin="230" WaveMax="700" WaveCenter="525" CH="4" RegionNum="1" VoltMin="0.0" VoltMax="1.0" Filter="" TriggerThreshold="20.0" SaveOff="False" Fixed="False" Gain="0.0">
+        <Channel Name="FL2-488" Begin="500" End="895" PulseDetector = "HW" FPGAChannelIndex="3"/>
+        <Channel Name="FL2-B" Begin="200" End="260" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="FL2-C" Begin="720" End="830" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="FL2-D" Begin="100" End="170" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <HPF On ="1" Epsilon ="1" DownSample ="8" CutoffFrequency="2000"/>
+      </Detector>
+      <Detector Name="FL3" Manufacturer="Hamamatsu" Type="H10723-210MOD2" Serial="" WaveMin="230" WaveMax="700" WaveCenter="600" CH="5" RegionNum="1" VoltMin="0.0" VoltMax="1.0" Filter="" TriggerThreshold="20.0" SaveOff="False" Fixed="False" Gain="0.0">
+        <Channel Name="FL3-488" Begin="500" End="895" PulseDetector = "HW" FPGAChannelIndex="4"/>
+        <Channel Name="FL3-B" Begin="100" End="180" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="FL3-C" Begin="200" End="280" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="FL3-D" Begin="300" End="380" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <HPF On ="1" Epsilon ="1" DownSample ="8" CutoffFrequency="2000"/>
+      </Detector>
+      <Detector Name="FL4" Manufacturer="Hamamatsu" Type="H10723-210MOD2" Serial="" WaveMin="230" WaveMax="700" WaveCenter="680" CH="6" RegionNum="1" VoltMin="0.0" VoltMax="1.0" Filter="" TriggerThreshold="20.0" SaveOff="False" Fixed="False" Gain="0.0">
+        <Channel Name="FL4-488" Begin="500" End="895" PulseDetector = "HW" FPGAChannelIndex="5"/>
+        <Channel Name="FL4-B" Begin="100" End="180" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="FL4-C" Begin="200" End="280" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="FL4-D" Begin="300" End="380" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <HPF On ="1" Epsilon ="1" DownSample ="8" CutoffFrequency="2000"/>
+      </Detector>
+      <Detector Name="FL5" Manufacturer="Hamamatsu" Type="H10723-210MOD2" Serial="" WaveMin="230" WaveMax="700" WaveCenter="792" CH="7" RegionNum="1" VoltMin="0.0" VoltMax="1.0" Filter="" TriggerThreshold="20.0" SaveOff="False" Fixed="False" Gain="0.0">
+        <Channel Name="FL5-637" Begin="0" End="499" PulseDetector = "HW" FPGAChannelIndex="6"/>
+        <Channel Name="FL5-B" Begin="100" End="180" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="FL5-C" Begin="200" End="280" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="FL5-D" Begin="300" End="380" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <HPF On ="1" Epsilon ="1" DownSample ="8" CutoffFrequency="2000"/>
+	  </Detector>
+      <Detector Name="NA" Manufacturer="Hamamatsu" Type="H10723-210MOD2" Serial="" WaveMin="230" WaveMax="700" WaveCenter="400" CH="8" RegionNum="1" VoltMin="0.0" VoltMax="1.0" Filter="" TriggerThreshold="20.0" SaveOff="False" Fixed="True" Gain="0.0">
+        <Channel Name="NA-A" Begin="0" End="895" PulseDetector = "HW" FPGAChannelIndex="7"/>
+        <Channel Name="NA-B" Begin="100" End="180" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="NA-C" Begin="200" End="280" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="NA-D" Begin="300" End="380" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <HPF On ="1" Epsilon ="1" DownSample ="8" CutoffFrequency="2000"/>
+      </Detector>
+      <Detector Name="fsGMI" Manufacturer="Hamamatsu" Type="H10723-210MOD2" Serial="" WaveMin="230" WaveMax="700" WaveCenter="405" CH="9" RegionNum="1" VoltMin="0.0" VoltMax="1.0" Filter="" TriggerThreshold="990.0" SaveOff="False" Fixed="False" Gain="0.0">
+        <Channel Name="fsGMI" Begin="0" End="895" PulseDetector = "HW" FPGAChannelIndex="8"/>
+        <Channel Name="fsGMI-B" Begin="100" End="180" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="fsGMI-C" Begin="200" End="280" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="fsGMI-D" Begin="300" End="380" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <HPF On ="1" Epsilon ="1" DownSample ="8" CutoffFrequency="2000"/>
+      </Detector>
+      <Detector Name="bsGMI" Manufacturer="Hamamatsu" Type="H10723-210MOD2" Serial="" WaveMin="230" WaveMax="700" WaveCenter="405" CH="10"  RegionNum="1" VoltMin="0.0" VoltMax="1.0" Filter="" TriggerThreshold="990.0" SaveOff="False" Fixed="False" Gain="0.0">
+        <Channel Name="bsGMI" Begin="0" End="895" PulseDetector = "HW" FPGAChannelIndex="9"/>
+        <Channel Name="bsGMI-B" Begin="100" End="180" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="bsGMI-C" Begin="200" End="280" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="bsGMI-D" Begin="300" End="380" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <HPF On ="1" Epsilon ="1" DownSample ="8" CutoffFrequency="2000"/>
+      </Detector>
+      <Detector Name="dGMI" Manufacturer="Hamamatsu" Type="H10723-210MOD2" Serial="" WaveMin="230" WaveMax="700" WaveCenter="405" CH="11" RegionNum="1" VoltMin="0.0" VoltMax="1.0" Filter="" TriggerThreshold="990.0" SaveOff="False" Fixed="False" Gain="0.0">
+        <Channel Name="dGMI" Begin="0" End="895" PulseDetector = "HW" FPGAChannelIndex="10"/>
+        <Channel Name="dGMI-B" Begin="100" End="180" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="dGMI-C" Begin="200" End="280" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="dGMI-D" Begin="300" End="380" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <HPF On ="1" Epsilon ="1" DownSample ="8" CutoffFrequency="2000"/>
+      </Detector>
+      <Detector Name="bfGMI" Manufacturer="Hamamatsu" Type="H10723-210MOD2" Serial="" WaveMin="230" WaveMax="700" WaveCenter="405" CH="12" VoltMin="0.0" RegionNum="1" VoltMax="1.0" Filter="" TriggerThreshold="990.0" SaveOff="False" Fixed="True" Gain="0.0">
+        <Channel Name="bfGMI" Begin="0" End="895" PulseDetector = "HW" FPGAChannelIndex="11"/>
+        <Channel Name="bfGMI-B" Begin="100" End="180" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="bfGMI-C" Begin="200" End="280" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <Channel Name="bfGMI-D" Begin="300" End="380" PulseDetector = "SW" FPGAChannelIndex="-1"/>
+        <HPF On ="1" Epsilon ="1" DownSample ="8" CutoffFrequency="2000"/>
+      </Detector>
+    </Detectors>
+    <MainTrigger CH="0" CntPreTrigger="40"/>
+    <LED Manufacturer="CCS" Type="PJ2-1505-2CA-PE" Serial="" IPAddress="192.168.10.253" TcpPort="40001" />
+    <ADC Manufacturer="ThinkCyte">
+      <Init Address="0x00" Value="0x400" />
+      <Init Address="0x11" Value="0x00" />
+      <Init Address="0x10" Value="0x00" />
+    </ADC>
+    <FPGA Manufacturer="kfcr" Type="" Serial="" Revision="2" Vunit="0.0001220703125" Tunit="0.05" Pls_tunit="0.02" Num_ml_board="1" AdcSampleRate="20" PulseClockRate="50">
+      <USB VendorID="0x04b4" ProductID="0x00f1" EpAddressOut="0x1" EpAddressIn="0x81" Timeout="1000" PacketSize="1024" />
+    </FPGA>
+    <FPGAPowerManagementModule>
+      <Module Enabled="True" COM="2" PollingInterval="2000" ReadConstand="1000"/>
+    </FPGAPowerManagementModule>
+    <Fluidics SystemName="FirstUnit">
+      <DA Manufacturer="Contec" Type="DAI12-4(USB)GY" Serial="" DeviceName="AIO002" />
+      <AD1 Manufacturer="Contec" Type="ADI12-8(USB)GY" Serial="" DeviceName="AIO001" Comment="流速" />
+      <AD2 Manufacturer="Contec" Type="ADI12-8(USB)GY" Serial="" DeviceName="AIO000" Comment="圧力" />
+      <DO Manufacturer="Contec" Type="DO-16TY-USB" Serial="" DeviceName="DIO000" />
+    </Fluidics>
+    <Cameras>
+      <Camera Manufacturer="Vision Research" Type="Phantom Miro C110" Serial="" Comment="High Speed" />
+      <Camera Manufacturer="ANDOR" Type="Zyla" Serial="" Comment="Mid Speed" />
+      <Camera Manufacturer="FLIR" Type="Grasshopper3" Serial="" Comment="Low Speed" />
+    </Cameras>
+    <FunctionGenerator Manufacturer="Tektronix" Type="AFG1022" Serial="" VisaAddress="USB0::0x0699::0x0353::2307233::INSTR" Enabled="True">
+      <Channel Number="1" />
+      <Shape Default="PULSe" />
+      <Frequency Min="0.1" Max="999.9" Default="5.0" />
+      <Phase Min="0" Max="360" Default="0" />
+      <DutyCycle Min="0.1" Max="100.0" Default="25.0" />
+      <OutputAmplitude Min="0" Max="10" Default="1.50" />
+      <OffsetLevel Min="0" Max="10" Default="0.75" />
+    </FunctionGenerator>
+    <Piezo>
+      <X Manufacturer="THORLABS" Type="" Serial="29501896" />
+      <Y Manufacturer="THORLABS" Type="" Serial="29501897" />
+    </Piezo>
+    <Pulse>
+      <Delay Min="240" Default="300" SafetyMargin="50" />
+    </Pulse>
+    <AlignmentPattern Pixel2Pulse="5" CenterPixel="40">
+      <SpeedMeasurement DistanceInPixels="650"/>
+      <PassingPointMeasurement DistanceInPixels="10"/>
+      <UpstreamRoI Begin="70" End="95"/>
+      <DownstreamRoI Begin="535" End="555"/>
+      <DiagonalRoI Begin="100" End="130"/>
+    </AlignmentPattern>
+    <ChipStage Manufacturer="ThinkCyte" Type="Casper-4DoF">
+      <ShaftMotorStage>
+        <X InvertFBPulseCountDir="0" ZeroPosition="7500"/>
+        <Y InvertFBPulseCountDir="0" ZeroPosition="7500"/>
+      </ShaftMotorStage>
+      <PrecibeoStage COM="10">
+        <X ZeroPosition="500"/>
+        <Y ZeroPosition="200"/>
+      </PrecibeoStage>
+      <Casper4DoFStage PORT="15000">
+        <X ZeroPosition="100"/>
+        <Y ZeroPosition="200"/>
+        <Z ZeroPosition="300"/>
+        <Theta ZeroPosition="-1"/>
+      </Casper4DoFStage>
+    </ChipStage>
+  </Devices>
+  <QC ExperimentPath="QC\QC_Experiment\" />
+  <Worksheets Directory="Worksheets" NumWorksheets="3">
+    <Worksheet Name="Calibration (Flow Check Pro)" Comment="Lot #: 3961708F, Cat #: A63493, Company: Beckman Coulter" Filename="calibration.wks" />
+    <Worksheet Name="Flow Check Pro" Comment="Lot #: 3961708F, Cat #: A63493, Company: Beckman Coulter" Filename="flowcheckpro.wks" />
+    <Worksheet Name="LF Mock" Comment="Lot #: 210119, Cat #: SSB-TC-01, Company: SlingShot" Filename="lfmock.wks" />
+  </Worksheets>
+  <LFMockBeadsModels NumModels="3">
+    <Model Type="dGMI" Path="QC\lfmock\dGMI" />
+    <Model Type="fsGMI" Path="QC\lfmock\fsGMI" />
+    <Model Type="bsGMI" Path="QC\lfmock\bsGMI" />
+  </LFMockBeadsModels>
+  <FluidicsServer IpAddress="127.0.0.1" Port="13000" Timeout="2000" Disabled="False">
+    <LD Disabled="False" />
+  </FluidicsServer>
+  <CelldetectorServer IpAddress="127.0.0.1" Port="14000" Timeout="20000" Disabled="False">
+  </CelldetectorServer>
+  <Logger Level="INFO" SecondInterval="60" />
+  <Storage>
+    <LowStorageCapacity Bytes="1000000000" />
+  </Storage>
+  <Calibration 
+    AcceptableSharpnessMeanMin="15"
+    AcceptableSharpnessMeanMax="20"
+    AcceptableSharpnessStdDevMax="1.5"
+    AcceptableStreamLocationMeanMin="49"
+    AcceptableStreamLocationMeanMax="51"
+    AcceptableStreamLocationStdDevMax="3.0"
+    HeightROI1Min="-10000"
+    HeightROI1Max="10000"
+    HeightROI2Min="-10000"
+    HeightROI2Max="10000"
+    HeightROI3Min="-10000"
+    HeightROI3Max="10000"
+    NumberOfEvents="500" 
+    PreciseCalibCh="2"
+    RoughCalibCh="1"
+    Timeout="20" 
+    TargetGate="2"
+    CalibrationSpecimen="Calibration beads"
+    IgnoreLaserCheck="False"
+    IgnoreFluidicsCheck="True"
+    IgnoreLEDCheck="True">
+    <Optical SearchRangeUM="20" />
+  </Calibration>
+  <SortDelay NumberOfEvents="200" SortingTime="2" WaitSortingTime="100"  WaitLDCheckTime="1000" />
+  <UMAP>
+    <SelectedDetector>
+        <Detector id="1">False</Detector>
+        <Detector id="2">False</Detector>
+        <Detector id="3">False</Detector>
+        <Detector id="4">False</Detector>
+        <Detector id="5">False</Detector>
+        <Detector id="6">False</Detector>
+        <Detector id="7">False</Detector>
+        <Detector id="8">False</Detector>
+        <Detector id="9">True</Detector>
+        <Detector id="10">True</Detector>
+        <Detector id="11">True</Detector>
+        <Detector id="12">True</Detector>
+    </SelectedDetector>
+  </UMAP>
+</Config>

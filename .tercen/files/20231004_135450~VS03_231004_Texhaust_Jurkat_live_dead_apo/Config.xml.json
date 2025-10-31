@@ -1,0 +1,43 @@
+{
+ "kind": "FileDocument",
+ "id": "20231004_135450~VS03_231004_Texhaust_Jurkat_live_dead_apo/Config.xml",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "Config.xml",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "0",
+ "dataUri": "lfs/57/a0/ae8901d51c0195255ea5b2f53b7a9debd8a0dc5b88fd253e4f53e20026d2",
+ "metadata": {
+  "kind": "FileMetadata",
+  "contentType": "",
+  "cacheControl": "",
+  "contentEncoding": "",
+  "contentLanguage": "",
+  "md5Hash": "3a46c3afa08fbbc9ece300e0449337b8"
+ },
+ "size": 15456,
+ "storageSize": 15456.0
+}

@@ -1,0 +1,1596 @@
+{
+ "kind": "Workflow",
+ "id": "8",
+ "isDeleted": false,
+ "rev": "",
+ "description": "A template worfklow that imports .gcs files for a user-defined set of specimen and tubes and plots the overall gating tree and the gates per tube. All read-in data are stored in .gz files in order to be further used downstream.",
+ "name": "DataPrep_Unstain_20251007_093916",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "PUBLISHED",
+   "value": "true"
+  },
+  {
+   "kind": "Pair",
+   "key": "run.error",
+   "value": "run.operator.exit.code.1"
+  },
+  {
+   "kind": "Pair",
+   "key": "run.error.reason",
+   "value": "Failed to run operator, exit code = 1\n--ERR--\nWARNING: Your kernel does not support memory swappiness capabilities or the cgroup is not mounted. Memory swappiness discarded.\nTraceback (most recent call last):\n  File \"/operator/main.py\", line 1468, in <module>\n    main()\n  File \"/operator/main.py\", line 1462, in main\n    cross_tab_view = CrossTabView.from_context(context)\n  File \"/operator/main.py\", line 211, in from_context\n    values[\"ri\"] = range(0, len(values[\"document_ids\"]))\nKeyError: 'document_ids'\n"
+  },
+  {
+   "kind": "Pair",
+   "key": "document.template.repo.url",
+   "value": "https://github.com/tercen/kumo_data_prepare_template"
+  },
+  {
+   "kind": "Pair",
+   "key": "document.template.repo.version",
+   "value": "0.7.4"
+  },
+  {
+   "kind": "Pair",
+   "key": "document.template.repo.path",
+   "value": "Data prepare workflow"
+  },
+  {
+   "kind": "Pair",
+   "key": "workflow.task.id",
+   "value": "75960c6f252389ad7df4c1dd9b1702f2"
+  },
+  {
+   "kind": "Pair",
+   "key": "run.task.id",
+   "value": "75960c6f252389ad7df4c1dd9b1702f2"
+  },
+  {
+   "kind": "Pair",
+   "key": "run.error",
+   "value": "run.operator.exit.code.1"
+  },
+  {
+   "kind": "Pair",
+   "key": "run.error.reason",
+   "value": "Failed to run operator, exit code = 1\n--ERR--\nWARNING: Your kernel does not support memory swappiness capabilities or the cgroup is not mounted. Memory swappiness discarded.\nTraceback (most recent call last):\n  File \"/operator/main.py\", line 1468, in <module>\n    main()\n  File \"/operator/main.py\", line 1462, in main\n    cross_tab_view = CrossTabView.from_context(context)\n  File \"/operator/main.py\", line 211, in from_context\n    values[\"ri\"] = range(0, len(values[\"document_ids\"]))\nKeyError: 'document_ids'\n"
+  },
+  {
+   "kind": "Pair",
+   "key": "setting.Max cells per tube",
+   "value": "-1"
+  },
+  {
+   "kind": "Pair",
+   "key": "setting.Plot limit percentile",
+   "value": "99"
+  },
+  {
+   "kind": "Pair",
+   "key": "setting.Margin Ratio",
+   "value": "0.1"
+  },
+  {
+   "kind": "Pair",
+   "key": "setting.Downsampling ratio",
+   "value": "-1"
+  },
+  {
+   "kind": "Pair",
+   "key": "workflow.type",
+   "value": "data prep"
+  },
+  {
+   "kind": "Pair",
+   "key": "setting.Run Date",
+   "value": "02025/October/07 09:39 AM"
+  },
+  {
+   "kind": "Pair",
+   "key": "kumo.workflow",
+   "value": "true"
+  },
+  {
+   "kind": "Pair",
+   "key": "hidden",
+   "value": "false"
+  },
+  {
+   "kind": "Pair",
+   "key": "run.workflow.task.id",
+   "value": "3247063a1fa73540364780a9681b43a7"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "7",
+ "links": [
+  {
+   "kind": "Link",
+   "id": "5f898cab-11d5-42b2-9907-fda374aa7ec9",
+   "inputId": "ebda5081-aae4-45fc-b91b-f7b4b19d402a-i-0",
+   "outputId": "0396dda7-fae2-4ffd-865b-4cee6a25cb06-o-0"
+  },
+  {
+   "kind": "Link",
+   "id": "1d0ef547-3fbb-4449-b863-c592dbe654b6",
+   "inputId": "db85654a-461b-4548-b094-5f3adbcd919f-i-0",
+   "outputId": "ebda5081-aae4-45fc-b91b-f7b4b19d402a-o-0"
+  },
+  {
+   "kind": "Link",
+   "id": "17ba52d5-5262-4eee-8cf7-85dd1b4d99be",
+   "inputId": "857e4fa3-29e7-4dfb-a681-cf8b64ab7bc2-i-0",
+   "outputId": "9f972c41-208b-491a-b583-77e1538478d2-o-0"
+  }
+ ],
+ "steps": [
+  {
+   "kind": "TableStep",
+   "id": "0396dda7-fae2-4ffd-865b-4cee6a25cb06",
+   "groupId": "",
+   "name": "Select experiment JSON (*.jexp)",
+   "inputs": [],
+   "outputs": [
+    {
+     "kind": "OutputPort",
+     "id": "0396dda7-fae2-4ffd-865b-4cee6a25cb06-o-0",
+     "linkType": "relation",
+     "name": "table"
+    }
+   ],
+   "rectangle": {
+    "kind": "Rectangle",
+    "extent": {
+     "kind": "Point",
+     "x": 206.4092559814453,
+     "y": 55.0
+    },
+    "topLeft": {
+     "kind": "Point",
+     "x": 209.79537200927734,
+     "y": 62.5
+    }
+   },
+   "state": {
+    "kind": "StepState",
+    "taskId": "",
+    "taskState": {
+     "kind": "DoneState"
+    }
+   },
+   "description": "",
+   "model": {
+    "kind": "TableStepModel",
+    "relation": {
+     "kind": "RenameRelation",
+     "id": "rename_05bc581a-46da-4d25-9718-9f6ccc270260",
+     "relation": {
+      "kind": "InMemoryRelation",
+      "id": "af5de8cf-ba84-4689-990a-03a2e873a613",
+      "inMemoryTable": {
+       "kind": "Table",
+       "nRows": 1,
+       "properties": {
+        "kind": "TableProperties",
+        "name": "",
+        "sortOrder": [],
+        "ascending": true
+       },
+       "columns": [
+        {
+         "kind": "Column",
+         "id": "documentId",
+         "name": "documentId",
+         "type": "string",
+         "nRows": 1,
+         "size": -1,
+         "metaData": {
+          "kind": "ColumnSchemaMetaData",
+          "sort": [],
+          "ascending": true,
+          "quartiles": [],
+          "properties": []
+         },
+         "storageSize": 0.0,
+         "cValues": {
+          "kind": "CValues"
+         },
+         "values": [
+          "f67b4bb5-8e33-41f7-984a-399564348296"
+         ]
+        },
+        {
+         "kind": "Column",
+         "id": ".documentId",
+         "name": ".documentId",
+         "type": "string",
+         "nRows": 1,
+         "size": -1,
+         "metaData": {
+          "kind": "ColumnSchemaMetaData",
+          "sort": [],
+          "ascending": true,
+          "quartiles": [],
+          "properties": []
+         },
+         "storageSize": 0.0,
+         "cValues": {
+          "kind": "CValues"
+         },
+         "values": [
+          "20231004_135450~VS03_231004_Texhaust_Jurkat_live_dead_apo/experiment.jexp"
+         ]
+        }
+       ]
+      }
+     },
+     "inNames": [
+      "documentId",
+      ".documentId"
+     ],
+     "outNames": [
+      "documentId",
+      ".documentId"
+     ]
+    },
+    "filterSelector": ".jexp"
+   }
+  },
+  {
+   "kind": "DataStep",
+   "id": "ebda5081-aae4-45fc-b91b-f7b4b19d402a",
+   "groupId": "",
+   "name": "Load experiment info",
+   "inputs": [
+    {
+     "kind": "InputPort",
+     "id": "ebda5081-aae4-45fc-b91b-f7b4b19d402a-i-0",
+     "linkType": "relation",
+     "name": "data"
+    }
+   ],
+   "outputs": [
+    {
+     "kind": "OutputPort",
+     "id": "ebda5081-aae4-45fc-b91b-f7b4b19d402a-o-0",
+     "linkType": "relation",
+     "name": "data"
+    }
+   ],
+   "rectangle": {
+    "kind": "Rectangle",
+    "extent": {
+     "kind": "Point",
+     "x": 144.1374969482422,
+     "y": 55.0
+    },
+    "topLeft": {
+     "kind": "Point",
+     "x": 240.9312515258789,
+     "y": 182.5
+    }
+   },
+   "state": {
+    "kind": "StepState",
+    "taskId": "3247063a1fa73540364780a9681b7116",
+    "taskState": {
+     "kind": "DoneState"
+    }
+   },
+   "description": "Loads the experiment JSON file .",
+   "model": {
+    "kind": "Crosstab",
+    "axis": {
+     "kind": "XYAxisList",
+     "rectangleSelections": [],
+     "xyAxis": [
+      {
+       "kind": "XYAxis",
+       "chart": {
+        "kind": "ChartPoint",
+        "name": "",
+        "properties": {
+         "kind": "Properties",
+         "properties": [],
+         "propertyValues": []
+        },
+        "pointSize": 4
+       },
+       "colors": {
+        "kind": "Colors",
+        "factors": [],
+        "palette": {
+         "kind": "CategoryPalette",
+         "backcolor": 0,
+         "properties": [],
+         "colorList": {
+          "kind": "ColorList",
+          "name": ""
+         },
+         "stringColorElements": []
+        }
+       },
+       "errors": {
+        "kind": "Errors",
+        "factors": []
+       },
+       "labels": {
+        "kind": "Labels",
+        "factors": []
+       },
+       "xAxis": {
+        "kind": "Axis",
+        "axisExtent": {
+         "kind": "Point",
+         "x": 80.0,
+         "y": 30.0
+        },
+        "axisSettings": {
+         "kind": "AxisSettings",
+         "meta": []
+        },
+        "graphicalFactor": {
+         "kind": "GraphicalFactor",
+         "factor": {
+          "kind": "Factor",
+          "name": "",
+          "type": "string"
+         },
+         "rectangle": {
+          "kind": "Rectangle",
+          "extent": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          },
+          "topLeft": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          }
+         }
+        }
+       },
+       "yAxis": {
+        "kind": "Axis",
+        "axisExtent": {
+         "kind": "Point",
+         "x": 80.0,
+         "y": 30.0
+        },
+        "axisSettings": {
+         "kind": "AxisSettings",
+         "meta": []
+        },
+        "graphicalFactor": {
+         "kind": "GraphicalFactor",
+         "factor": {
+          "kind": "Factor",
+          "name": "",
+          "type": "string"
+         },
+         "rectangle": {
+          "kind": "Rectangle",
+          "extent": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          },
+          "topLeft": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          }
+         }
+        }
+       },
+       "taskId": "",
+       "preprocessors": []
+      }
+     ]
+    },
+    "columnTable": {
+     "kind": "CrosstabTable",
+     "cellSize": 250.0,
+     "offset": 0,
+     "graphicalFactors": [
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "documentId",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 30.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      }
+     ],
+     "rectangleSelections": [],
+     "nRows": 1
+    },
+    "filters": {
+     "kind": "Filters",
+     "removeNaN": true,
+     "namedFilters": []
+    },
+    "operatorSettings": {
+     "kind": "OperatorSettings",
+     "namespace": "ds0",
+     "operatorRef": {
+      "kind": "OperatorRef",
+      "name": "Experiment read operator",
+      "version": "0.3.2",
+      "operatorId": "3",
+      "operatorKind": "DockerOperator",
+      "propertyValues": [],
+      "url": {
+       "kind": "Url",
+       "uri": "https://github.com/tercen/kumo_experiment_read_operator"
+      },
+      "operatorSpec": {
+       "kind": "OperatorSpec",
+       "ontologyUri": "",
+       "ontologyVersion": "",
+       "inputSpecs": [],
+       "outputSpecs": []
+      }
+     },
+     "environment": [],
+     "operatorModel": {
+      "kind": "OperatorModel"
+     }
+    },
+    "rowTable": {
+     "kind": "CrosstabTable",
+     "cellSize": 250.0,
+     "offset": 0,
+     "graphicalFactors": [
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      }
+     ],
+     "rectangleSelections": [],
+     "nRows": 1
+    },
+    "taskId": ""
+   },
+   "computedRelation": {
+    "kind": "CompositeRelation",
+    "id": "a2fb78fb-8708-4937-a0bb-c51d10e61674",
+    "joinOperators": [
+     {
+      "kind": "JoinOperator",
+      "joinType": "",
+      "leftPair": {
+       "kind": "ColumnPair",
+       "lColumns": [],
+       "rColumns": []
+      },
+      "rightRelation": {
+       "kind": "SimpleRelation",
+       "id": "d8fd9e43020cdb7c2e82337d8fc32f4010adaf27ff0abc6f374766dd8a69b1d7",
+       "index": 0
+      }
+     }
+    ],
+    "mainRelation": {
+     "kind": "Relation",
+     "id": "f24f6b73-b589-4402-bc2b-6f6bba280391"
+    }
+   },
+   "parentDataStepId": ""
+  },
+  {
+   "kind": "DataStep",
+   "id": "db85654a-461b-4548-b094-5f3adbcd919f",
+   "groupId": "",
+   "name": "Prepare data for selected specimen & tubes",
+   "inputs": [
+    {
+     "kind": "InputPort",
+     "id": "db85654a-461b-4548-b094-5f3adbcd919f-i-0",
+     "linkType": "relation",
+     "name": "data"
+    }
+   ],
+   "outputs": [
+    {
+     "kind": "OutputPort",
+     "id": "db85654a-461b-4548-b094-5f3adbcd919f-o-0",
+     "linkType": "relation",
+     "name": "data"
+    }
+   ],
+   "rectangle": {
+    "kind": "Rectangle",
+    "extent": {
+     "kind": "Point",
+     "x": 272.0550079345703,
+     "y": 55.0
+    },
+    "topLeft": {
+     "kind": "Point",
+     "x": 244.97249603271484,
+     "y": 339.5
+    }
+   },
+   "state": {
+    "kind": "StepState",
+    "taskId": "3247063a1fa73540364780a9681ec0b5",
+    "taskState": {
+     "kind": "DoneState"
+    }
+   },
+   "description": "This data step allows user to select the specimen and tubes, imports the data from the relevant .gcs files, visualizes the gate hierarchy in a markdown file, visualizes all gates per tube and saves in the Tercen project the data and gates.",
+   "model": {
+    "kind": "Crosstab",
+    "axis": {
+     "kind": "XYAxisList",
+     "rectangleSelections": [],
+     "xyAxis": [
+      {
+       "kind": "XYAxis",
+       "chart": {
+        "kind": "ChartPoint",
+        "name": "",
+        "properties": {
+         "kind": "Properties",
+         "properties": [],
+         "propertyValues": []
+        },
+        "pointSize": 4
+       },
+       "colors": {
+        "kind": "Colors",
+        "factors": [],
+        "palette": {
+         "kind": "CategoryPalette",
+         "backcolor": 0,
+         "properties": [],
+         "colorList": {
+          "kind": "ColorList",
+          "name": ""
+         },
+         "stringColorElements": []
+        }
+       },
+       "errors": {
+        "kind": "Errors",
+        "factors": []
+       },
+       "labels": {
+        "kind": "Labels",
+        "factors": []
+       },
+       "xAxis": {
+        "kind": "Axis",
+        "axisExtent": {
+         "kind": "Point",
+         "x": 80.0,
+         "y": 30.0
+        },
+        "axisSettings": {
+         "kind": "AxisSettings",
+         "meta": []
+        },
+        "graphicalFactor": {
+         "kind": "GraphicalFactor",
+         "factor": {
+          "kind": "Factor",
+          "name": "",
+          "type": "string"
+         },
+         "rectangle": {
+          "kind": "Rectangle",
+          "extent": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          },
+          "topLeft": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          }
+         }
+        }
+       },
+       "yAxis": {
+        "kind": "Axis",
+        "axisExtent": {
+         "kind": "Point",
+         "x": 114.0,
+         "y": 30.0
+        },
+        "axisSettings": {
+         "kind": "AxisSettings",
+         "meta": []
+        },
+        "graphicalFactor": {
+         "kind": "GraphicalFactor",
+         "factor": {
+          "kind": "Factor",
+          "name": "",
+          "type": "string"
+         },
+         "rectangle": {
+          "kind": "Rectangle",
+          "extent": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          },
+          "topLeft": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          }
+         }
+        }
+       },
+       "taskId": "",
+       "preprocessors": []
+      }
+     ]
+    },
+    "columnTable": {
+     "kind": "CrosstabTable",
+     "cellSize": 250.0,
+     "offset": 0,
+     "graphicalFactors": [
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      }
+     ],
+     "rectangleSelections": [],
+     "nRows": 1
+    },
+    "filters": {
+     "kind": "Filters",
+     "removeNaN": true,
+     "namedFilters": [
+      {
+       "kind": "NamedFilter",
+       "logical": "or",
+       "not": false,
+       "filterExprs": [
+        {
+         "kind": "Filter",
+         "logical": "and",
+         "not": false,
+         "filterExprs": [
+          {
+           "kind": "FilterExpr",
+           "filterOp": "equals",
+           "stringValue": "Jurkat_live_dead_apo",
+           "factor": {
+            "kind": "Factor",
+            "name": "ds0.Spec_Name",
+            "type": "string"
+           },
+           "preProcessors": []
+          },
+          {
+           "kind": "FilterExpr",
+           "filterOp": "equals",
+           "stringValue": "3_unstain",
+           "factor": {
+            "kind": "Factor",
+            "name": "ds0.Tube_Name",
+            "type": "string"
+           },
+           "preProcessors": []
+          },
+          {
+           "kind": "FilterExpr",
+           "filterOp": "equals",
+           "stringValue": "",
+           "factor": {
+            "kind": "Factor",
+            "name": "ds0.Comment",
+            "type": "string"
+           },
+           "preProcessors": []
+          }
+         ]
+        }
+       ],
+       "meta": [],
+       "name": "TubeFilter"
+      }
+     ]
+    },
+    "operatorSettings": {
+     "kind": "OperatorSettings",
+     "namespace": "ds1",
+     "operatorRef": {
+      "kind": "OperatorRef",
+      "name": "Data prepare operator",
+      "version": "0.11.5",
+      "operatorId": "4",
+      "operatorKind": "DockerOperator",
+      "propertyValues": [
+       {
+        "kind": "PropertyValue",
+        "name": "Plot limit percentile",
+        "value": "99"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "Margin Ratio",
+        "value": "0.1"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "Max cells per tube",
+        "value": "-1"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "Downsampling ratio",
+        "value": "-1"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "[EXPORT] Run Prefix",
+        "value": ""
+       }
+      ],
+      "url": {
+       "kind": "Url",
+       "uri": "https://github.com/tercen/kumo_data_prep_operator"
+      },
+      "operatorSpec": {
+       "kind": "OperatorSpec",
+       "ontologyUri": "",
+       "ontologyVersion": "",
+       "inputSpecs": [],
+       "outputSpecs": []
+      }
+     },
+     "environment": [
+      {
+       "kind": "Pair",
+       "key": "cpu",
+       "value": "0"
+      },
+      {
+       "kind": "Pair",
+       "key": "ram",
+       "value": "0"
+      },
+      {
+       "kind": "Pair",
+       "key": "cpu-shares",
+       "value": "0"
+      },
+      {
+       "kind": "Pair",
+       "key": "tercen.collect.stats",
+       "value": "false"
+      },
+      {
+       "kind": "Pair",
+       "key": "debug",
+       "value": "false"
+      },
+      {
+       "kind": "Pair",
+       "key": "preferred.run.ctx",
+       "value": "server"
+      }
+     ],
+     "operatorModel": {
+      "kind": "OperatorModel"
+     }
+    },
+    "rowTable": {
+     "kind": "CrosstabTable",
+     "cellSize": 50.0,
+     "offset": 0,
+     "graphicalFactors": [
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "documentId",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 80.0,
+         "y": 0.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      },
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "ds0.Spec_Name",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 109.0,
+         "y": 30.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      },
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "ds0.Tube_Name",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 154.0,
+         "y": 30.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      },
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "ds0.Comment",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 110.0,
+         "y": 30.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      },
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "ds0.gcs_documentId",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 180.0,
+         "y": 30.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      }
+     ],
+     "rectangleSelections": [],
+     "nRows": 1
+    },
+    "taskId": ""
+   },
+   "computedRelation": {
+    "kind": "CompositeRelation",
+    "id": "0c24c9b3-67d4-47f7-a01b-cd661dceb638",
+    "joinOperators": [
+     {
+      "kind": "JoinOperator",
+      "joinType": "",
+      "leftPair": {
+       "kind": "ColumnPair",
+       "lColumns": [],
+       "rColumns": []
+      },
+      "rightRelation": {
+       "kind": "SimpleRelation",
+       "id": "8bb61d15db82d85853a9fcfcfddb04dccec11889f5fe9d94cc35e61ec5f504b4",
+       "index": 0
+      }
+     },
+     {
+      "kind": "JoinOperator",
+      "joinType": "",
+      "leftPair": {
+       "kind": "ColumnPair",
+       "lColumns": [],
+       "rColumns": []
+      },
+      "rightRelation": {
+       "kind": "RenameRelation",
+       "id": "ed4cbc5d-1c78-4afd-9bb3-cf22aa2088ad",
+       "relation": {
+        "kind": "CompositeRelation",
+        "id": "c4dadf3d-ed66-485c-a53a-3649adfe8906",
+        "joinOperators": [
+         {
+          "kind": "JoinOperator",
+          "joinType": "",
+          "leftPair": {
+           "kind": "ColumnPair",
+           "lColumns": [
+            "ds1.Tube"
+           ],
+           "rColumns": [
+            "ds0.Tube_Name"
+           ]
+          },
+          "rightRelation": {
+           "kind": "SimpleRelation",
+           "id": "6d5d921c13fde8dd1117ac845963c0f4628aa20924e5a2229edfe8d282fa4f96",
+           "index": 0
+          }
+         },
+         {
+          "kind": "JoinOperator",
+          "joinType": "",
+          "leftPair": {
+           "kind": "ColumnPair",
+           "lColumns": [
+            "ds1.gcs_pickle_id"
+           ],
+           "rColumns": [
+            ".gcs_id2"
+           ]
+          },
+          "rightRelation": {
+           "kind": "SimpleRelation",
+           "id": "1016047c606c2e8924b6ce962b204ae27a6f9abcad57dd589c8ee7bb63b2c127",
+           "index": 0
+          }
+         },
+         {
+          "kind": "JoinOperator",
+          "joinType": "",
+          "leftPair": {
+           "kind": "ColumnPair",
+           "lColumns": [
+            ".gcs_id2"
+           ],
+           "rColumns": [
+            ".gcs_id2"
+           ]
+          },
+          "rightRelation": {
+           "kind": "SimpleRelation",
+           "id": "133ce1a116ec30f26c516afb45b8e923c7b2d4432fe44d89aa42b4889aba6094",
+           "index": 0
+          }
+         },
+         {
+          "kind": "JoinOperator",
+          "joinType": "",
+          "leftPair": {
+           "kind": "ColumnPair",
+           "lColumns": [
+            ".gcs_id2",
+            "ds1.event_id",
+            "ds1.Gate"
+           ],
+           "rColumns": [
+            ".gcs_id2",
+            ".event_id",
+            "ds1.GateName"
+           ]
+          },
+          "rightRelation": {
+           "kind": "SimpleRelation",
+           "id": "adfcc3a437936158d119af721083fea82ea165fcd5a90b17560a05e1df325190",
+           "index": 0
+          }
+         },
+         {
+          "kind": "JoinOperator",
+          "joinType": "",
+          "leftPair": {
+           "kind": "ColumnPair",
+           "lColumns": [
+            ".gcs_id2",
+            "ds1.event_id"
+           ],
+           "rColumns": [
+            ".gcs_id2",
+            ".event_id"
+           ]
+          },
+          "rightRelation": {
+           "kind": "SimpleRelation",
+           "id": "caad56f800b582d09b34425bdaa8d60fd399e2eb7183ba667ad40eee9ca04a54",
+           "index": 0
+          }
+         }
+        ],
+        "mainRelation": {
+         "kind": "SimpleRelation",
+         "id": "168f1591a2abdeef7811ff3105afe2391d120552764e8bb776d299a4929e9d63",
+         "index": 0
+        }
+       },
+       "inNames": [
+        "ds1.Specimen",
+        "ds1.Tube",
+        "ds1.Comment",
+        "ds1.roi",
+        ".ri",
+        "ds1.gcs_pickle_filename",
+        "ds1.gcs_documentId",
+        "ds1.gcs_pickle_id",
+        "168f1591a2abdeef7811ff3105afe2391d120552764e8bb776d299a4929e9d63._rids",
+        "168f1591a2abdeef7811ff3105afe2391d120552764e8bb776d299a4929e9d63.tlbId",
+        "documentId",
+        "ds0.Spec_Name",
+        "ds0.Tube_Name",
+        "ds0.Comment",
+        "ds0.gcs_documentId",
+        "6d5d921c13fde8dd1117ac845963c0f4628aa20924e5a2229edfe8d282fa4f96._rids",
+        "6d5d921c13fde8dd1117ac845963c0f4628aa20924e5a2229edfe8d282fa4f96.tlbId",
+        ".gcs_id2",
+        "ds1.event_id",
+        "1016047c606c2e8924b6ce962b204ae27a6f9abcad57dd589c8ee7bb63b2c127._rids",
+        "1016047c606c2e8924b6ce962b204ae27a6f9abcad57dd589c8ee7bb63b2c127.tlbId",
+        "ds1.gcs_gate_documentId",
+        "ds1.gcs_gate_document_name",
+        "ds1.Gate",
+        "ds1.Events Count",
+        "133ce1a116ec30f26c516afb45b8e923c7b2d4432fe44d89aa42b4889aba6094._rids",
+        "133ce1a116ec30f26c516afb45b8e923c7b2d4432fe44d89aa42b4889aba6094.tlbId",
+        ".event_id",
+        "ds1.GateName",
+        "ds1.GateMember",
+        "adfcc3a437936158d119af721083fea82ea165fcd5a90b17560a05e1df325190._rids",
+        "adfcc3a437936158d119af721083fea82ea165fcd5a90b17560a05e1df325190.tlbId",
+        "ds1.fsc_comp_h",
+        "ds1.bsc_comp_h",
+        "ds1.fl1_405_comp_h",
+        "ds1.fl2_488_comp_h",
+        "ds1.fl3_488_comp_h",
+        "ds1.fl4_488_comp_h",
+        "ds1.fl5_637_comp_h",
+        "ds1.na_a_comp_h",
+        "ds1.fsgmi_comp_h",
+        "ds1.bsgmi_comp_h",
+        "ds1.dgmi_comp_h",
+        "ds1.bfgmi_comp_h",
+        "caad56f800b582d09b34425bdaa8d60fd399e2eb7183ba667ad40eee9ca04a54._rids",
+        "caad56f800b582d09b34425bdaa8d60fd399e2eb7183ba667ad40eee9ca04a54.tlbId",
+        "documentId",
+        "ds0.Spec_Name",
+        "ds0.Tube_Name",
+        "ds0.Comment",
+        "ds0.gcs_documentId"
+       ],
+       "outNames": [
+        "ds1.Specimen",
+        "ds1.Tube",
+        "ds1.Comment",
+        "ds1.roi",
+        ".ri",
+        "ds1.gcs_pickle_filename",
+        "ds1.gcs_documentId",
+        "ds1.gcs_pickle_id",
+        "168f1591a2abdeef7811ff3105afe2391d120552764e8bb776d299a4929e9d63._rids",
+        "168f1591a2abdeef7811ff3105afe2391d120552764e8bb776d299a4929e9d63.tlbId",
+        "documentId",
+        "ds0.Spec_Name",
+        "ds0.Tube_Name",
+        "ds0.Comment",
+        "ds0.gcs_documentId",
+        "6d5d921c13fde8dd1117ac845963c0f4628aa20924e5a2229edfe8d282fa4f96._rids",
+        "6d5d921c13fde8dd1117ac845963c0f4628aa20924e5a2229edfe8d282fa4f96.tlbId",
+        ".gcs_id2",
+        "ds1.event_id",
+        "1016047c606c2e8924b6ce962b204ae27a6f9abcad57dd589c8ee7bb63b2c127._rids",
+        "1016047c606c2e8924b6ce962b204ae27a6f9abcad57dd589c8ee7bb63b2c127.tlbId",
+        "ds1.gcs_gate_documentId",
+        "ds1.gcs_gate_document_name",
+        "ds1.Gate",
+        "ds1.Events Count",
+        "133ce1a116ec30f26c516afb45b8e923c7b2d4432fe44d89aa42b4889aba6094._rids",
+        "133ce1a116ec30f26c516afb45b8e923c7b2d4432fe44d89aa42b4889aba6094.tlbId",
+        ".event_id",
+        "ds1.GateName",
+        "ds1.GateMember",
+        "adfcc3a437936158d119af721083fea82ea165fcd5a90b17560a05e1df325190._rids",
+        "adfcc3a437936158d119af721083fea82ea165fcd5a90b17560a05e1df325190.tlbId",
+        "ds1.fsc_comp_h",
+        "ds1.bsc_comp_h",
+        "ds1.fl1_405_comp_h",
+        "ds1.fl2_488_comp_h",
+        "ds1.fl3_488_comp_h",
+        "ds1.fl4_488_comp_h",
+        "ds1.fl5_637_comp_h",
+        "ds1.na_a_comp_h",
+        "ds1.fsgmi_comp_h",
+        "ds1.bsgmi_comp_h",
+        "ds1.dgmi_comp_h",
+        "ds1.bfgmi_comp_h",
+        "caad56f800b582d09b34425bdaa8d60fd399e2eb7183ba667ad40eee9ca04a54._rids",
+        "caad56f800b582d09b34425bdaa8d60fd399e2eb7183ba667ad40eee9ca04a54.tlbId",
+        "ds1..documentId",
+        "ds1..Spec_Name",
+        "ds1..Tube_Name",
+        "ds1..Comment",
+        "ds1..gcs_documentId"
+       ]
+      }
+     }
+    ],
+    "mainRelation": {
+     "kind": "Relation",
+     "id": "2c082b07-e8bd-4be7-b218-7825245388c4"
+    }
+   },
+   "parentDataStepId": ""
+  },
+  {
+   "kind": "DataStep",
+   "id": "857e4fa3-29e7-4dfb-a681-cf8b64ab7bc2",
+   "groupId": "",
+   "name": "Load gates worksheet",
+   "inputs": [
+    {
+     "kind": "InputPort",
+     "id": "857e4fa3-29e7-4dfb-a681-cf8b64ab7bc2-i-0",
+     "linkType": "relation",
+     "name": "data"
+    }
+   ],
+   "outputs": [
+    {
+     "kind": "OutputPort",
+     "id": "857e4fa3-29e7-4dfb-a681-cf8b64ab7bc2-o-0",
+     "linkType": "relation",
+     "name": "data"
+    }
+   ],
+   "rectangle": {
+    "kind": "Rectangle",
+    "extent": {
+     "kind": "Point",
+     "x": 146.8254852294922,
+     "y": 55.0
+    },
+    "topLeft": {
+     "kind": "Point",
+     "x": 517.0275039672852,
+     "y": 339.5
+    }
+   },
+   "state": {
+    "kind": "StepState",
+    "taskId": "3247063a1fa73540364780a9681b6331",
+    "taskState": {
+     "kind": "DoneState"
+    }
+   },
+   "description": "Reads-in all the gates from the gates worksheet.",
+   "model": {
+    "kind": "Crosstab",
+    "axis": {
+     "kind": "XYAxisList",
+     "rectangleSelections": [],
+     "xyAxis": [
+      {
+       "kind": "XYAxis",
+       "chart": {
+        "kind": "ChartPoint",
+        "name": "",
+        "properties": {
+         "kind": "Properties",
+         "properties": [],
+         "propertyValues": []
+        },
+        "pointSize": 4
+       },
+       "colors": {
+        "kind": "Colors",
+        "factors": [],
+        "palette": {
+         "kind": "CategoryPalette",
+         "backcolor": 0,
+         "properties": [],
+         "colorList": {
+          "kind": "ColorList",
+          "name": ""
+         },
+         "stringColorElements": []
+        }
+       },
+       "errors": {
+        "kind": "Errors",
+        "factors": []
+       },
+       "labels": {
+        "kind": "Labels",
+        "factors": []
+       },
+       "xAxis": {
+        "kind": "Axis",
+        "axisExtent": {
+         "kind": "Point",
+         "x": 80.0,
+         "y": 30.0
+        },
+        "axisSettings": {
+         "kind": "AxisSettings",
+         "meta": []
+        },
+        "graphicalFactor": {
+         "kind": "GraphicalFactor",
+         "factor": {
+          "kind": "Factor",
+          "name": "",
+          "type": "string"
+         },
+         "rectangle": {
+          "kind": "Rectangle",
+          "extent": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          },
+          "topLeft": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          }
+         }
+        }
+       },
+       "yAxis": {
+        "kind": "Axis",
+        "axisExtent": {
+         "kind": "Point",
+         "x": 80.0,
+         "y": 30.0
+        },
+        "axisSettings": {
+         "kind": "AxisSettings",
+         "meta": []
+        },
+        "graphicalFactor": {
+         "kind": "GraphicalFactor",
+         "factor": {
+          "kind": "Factor",
+          "name": "",
+          "type": "string"
+         },
+         "rectangle": {
+          "kind": "Rectangle",
+          "extent": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          },
+          "topLeft": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          }
+         }
+        }
+       },
+       "taskId": "",
+       "preprocessors": []
+      }
+     ]
+    },
+    "columnTable": {
+     "kind": "CrosstabTable",
+     "cellSize": 250.0,
+     "offset": 0,
+     "graphicalFactors": [
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      }
+     ],
+     "rectangleSelections": [],
+     "nRows": 1
+    },
+    "filters": {
+     "kind": "Filters",
+     "removeNaN": true,
+     "namedFilters": []
+    },
+    "operatorSettings": {
+     "kind": "OperatorSettings",
+     "namespace": "ds2",
+     "operatorRef": {
+      "kind": "OperatorRef",
+      "name": "",
+      "version": "",
+      "operatorId": "",
+      "operatorKind": "",
+      "propertyValues": [],
+      "url": {
+       "kind": "Url",
+       "uri": ""
+      },
+      "operatorSpec": {
+       "kind": "OperatorSpec",
+       "ontologyUri": "",
+       "ontologyVersion": "",
+       "inputSpecs": [],
+       "outputSpecs": []
+      }
+     },
+     "environment": [],
+     "operatorModel": {
+      "kind": "OperatorModel"
+     }
+    },
+    "rowTable": {
+     "kind": "CrosstabTable",
+     "cellSize": 250.0,
+     "offset": 0,
+     "graphicalFactors": [
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "documentId",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 80.0,
+         "y": 0.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      }
+     ],
+     "rectangleSelections": [],
+     "nRows": 1
+    },
+    "taskId": ""
+   },
+   "computedRelation": {
+    "kind": "Relation",
+    "id": "7f907d56-bd0e-49d3-89e9-0fd0ea9398ec"
+   },
+   "parentDataStepId": "db85654a-461b-4548-b094-5f3adbcd919f"
+  },
+  {
+   "kind": "TableStep",
+   "id": "9f972c41-208b-491a-b583-77e1538478d2",
+   "groupId": "",
+   "name": "Select gates worksheet (*.jwks)",
+   "inputs": [],
+   "outputs": [
+    {
+     "kind": "OutputPort",
+     "id": "9f972c41-208b-491a-b583-77e1538478d2-o-0",
+     "linkType": "relation",
+     "name": "table"
+    }
+   ],
+   "rectangle": {
+    "kind": "Rectangle",
+    "extent": {
+     "kind": "Point",
+     "x": 201.1732940673828,
+     "y": 55.0
+    },
+    "topLeft": {
+     "kind": "Point",
+     "x": 584.4133529663086,
+     "y": 185.5
+    }
+   },
+   "state": {
+    "kind": "StepState",
+    "taskId": "",
+    "taskState": {
+     "kind": "DoneState"
+    }
+   },
+   "description": "Select a *.jwks file.",
+   "model": {
+    "kind": "TableStepModel",
+    "relation": {
+     "kind": "RenameRelation",
+     "id": "rename_bebefd0e-e268-486c-a646-d64359f25a52",
+     "relation": {
+      "kind": "InMemoryRelation",
+      "id": "041b63d9-0880-4431-8959-a1841e41c694",
+      "inMemoryTable": {
+       "kind": "Table",
+       "nRows": 1,
+       "properties": {
+        "kind": "TableProperties",
+        "name": "",
+        "sortOrder": [],
+        "ascending": true
+       },
+       "columns": [
+        {
+         "kind": "Column",
+         "id": "documentId",
+         "name": "documentId",
+         "type": "string",
+         "nRows": 1,
+         "size": -1,
+         "metaData": {
+          "kind": "ColumnSchemaMetaData",
+          "sort": [],
+          "ascending": true,
+          "quartiles": [],
+          "properties": []
+         },
+         "storageSize": 0.0,
+         "cValues": {
+          "kind": "CValues"
+         },
+         "values": [
+          "1f678bfb-2763-4617-8591-ba81891bad5d"
+         ]
+        },
+        {
+         "kind": "Column",
+         "id": ".documentId",
+         "name": ".documentId",
+         "type": "string",
+         "nRows": 1,
+         "size": -1,
+         "metaData": {
+          "kind": "ColumnSchemaMetaData",
+          "sort": [],
+          "ascending": true,
+          "quartiles": [],
+          "properties": []
+         },
+         "storageSize": 0.0,
+         "cValues": {
+          "kind": "CValues"
+         },
+         "values": [
+          "20231004_135450~VS03_231004_Texhaust_Jurkat_live_dead_apo/WorkSheets/001_01.jwks"
+         ]
+        }
+       ]
+      }
+     },
+     "inNames": [
+      "documentId",
+      ".documentId"
+     ],
+     "outNames": [
+      "documentId",
+      ".documentId"
+     ]
+    },
+    "filterSelector": ".jwks"
+   }
+  }
+ ],
+ "offset": {
+  "kind": "Point",
+  "x": 0.0,
+  "y": 0.0
+ },
+ "scale": 1.0
+}

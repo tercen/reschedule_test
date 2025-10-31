@@ -1,0 +1,43 @@
+{
+ "kind": "FileDocument",
+ "id": "20231004_135450~VS03_231004_Texhaust_Jurkat_live_dead_apo/acquisition.log",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "acquisition.log",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "0",
+ "dataUri": "lfs/3d/ec/e9b24e8ce24a960b7d3dc19558a407dd5804e613ada55db0853acf4bfea3",
+ "metadata": {
+  "kind": "FileMetadata",
+  "contentType": "",
+  "cacheControl": "",
+  "contentEncoding": "",
+  "contentLanguage": "",
+  "md5Hash": "8dca31cfb3f6b2601d223000ede59ef5"
+ },
+ "size": 14658,
+ "storageSize": 14658.0
+}
